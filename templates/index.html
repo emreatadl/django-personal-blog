@@ -41,26 +41,9 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav">
-							<li class="nav-item active"><a class="nav-link" href="index.html">Anasayfa</a></li>
-							<li class="nav-item"><a class="nav-link" href="about.html">Hakkımda</a></li>
-							<li class="nav-item"><a class="nav-link" href="portfolio.html">Edit</a></li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Pages</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-									<li class="nav-item"><a class="nav-link" href="portfolio-details.html">Portfolio Details</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Blog</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-								</ul>
-							</li>
-							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+							<li class="nav-item active"><a class="nav-link" href="{% url 'blog:index' %}">Anasayfa</a></li>
+							<li class="nav-item"><a class="nav-link" href="{% url 'blog:aboutme' %}">Hakkımda</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'blog:home' %}">Blog</a></li>
 						</ul>
 					</div>
 				</div>
@@ -76,21 +59,20 @@
 				<div class="row align-items-center justify-content-between">
 					<div class="col-lg-6">
 						<div class="banner_content">
-							<h3>Hey There !</h3>
 							<h1 class="text-uppercase">Emre Atadil</h1>
 							<h5 class="text-uppercase">Associate Product Manager & Trendyol</h5>
 							<div class="social_icons my-5">
-								<a href="https://twitter.com/emreatadil"><i class="ti-twitter"></i></a>
-								<a href="https://www.instagram.com/emreatadil/"><i class="ti-instagram"></i></a>
-								<a href="https://github.com/emreatadl"><i class="ti-github"></i></a>
-								<a href="https://tr.linkedin.com/in/emre-atadil"><i class="ti-linkedin"></i></a>
+								<a href="https://twitter.com/emreatadil" target="_blank"><i class="ti-twitter"></i></a>
+								<a href="https://www.instagram.com/emreatadil/" target="_blank"><i class="ti-instagram"></i></a>
+								<a href="https://github.com/emreatadl" target="_blank"><i class="ti-github"></i></a>
+								<a href="https://tr.linkedin.com/in/emre-atadil" target="_blank"><i class="ti-linkedin"></i></a>
 							</div>
-							<a class="primary_btn" href="#"><span>Hakkımda</span></a>
+							<a class="primary_btn" href="{% url 'blog:aboutme' %}"><span>Hakkımda</span></a>
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="home_right_img">
-							<img class="img-fluid" src="{% static 'img/emre_atadil.png' %}" alt="">
+							<img class="img-fluid" src="{% static 'img/banner/home-right-5.png' %}" alt="">
 						</div>
 					</div>
 				</div>
@@ -125,6 +107,45 @@
 		</div>
 	</section>{% endcomment %}
 	<!--================ End Statistics Area =================-->
+	<!--================ Start Blog Area =================-->
+	<section class="blog-area section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title">
+						<p class="top_text"><span></span></p>
+						<h2>Son Yazılarım</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                {% for last_post in queryset_index %}
+				<div class="col-lg-4 col-md-6">
+					<div class="single-blog">
+						<div class="thumb">
+							<img class="img-fluid" src="{{ last_post.model_pic.url }}" alt="">
+						</div>
+						<div class="short_details">
+							<div class="meta-top d-flex">
+								<a href="#"><i class="ti-user"></i>{{ last_post.author }}</a>
+								<a><i class="ti-calendar"></i>{{ last_post.created_on }}</a>
+							</div>
+							<a class="d-block" href="">
+								<h4>{{ last_post.title }}</h4>
+							</a>
+							<div class="text-wrap">
+								<p>{{ last_post.content }}</p>
+							</div>
+							<a href="" class="primary_btn2">Devamını Oku</a>
+						</div>
+					</div>
+				</div>
+                {% endfor %}
+			</div>
+		</div>
+	</section>
+	<!--================ End Blog Area =================-->
 
 
 	<!--================ Start Features Area =================-->
@@ -133,8 +154,8 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="main_title">
-						<h2>Kişisel <br>
-							Projelerim </h2>
+                        <p class="top_text"><span></span></p>
+						<h2>Online Tools</h2>
 					</div>
 				</div>
 			</div>
@@ -207,7 +228,7 @@
                   <li><span><i class="fas fa-star"></i></span></li>
                   <li><span><i class="fas fa-star"></i></span></li>
                   <li><span><i class="fas fa-star"></i></span></li>
-                  <li class="disable"><span><i class="fas fa-star"></i></span></li>                  
+                  <li class="disable"><span><i class="fas fa-star"></i></span></li>
                 </ul>
               </div>
             </div>
@@ -232,7 +253,7 @@
                   <li><span><i class="fas fa-star"></i></span></li>
                   <li><span><i class="fas fa-star"></i></span></li>
                   <li><span><i class="fas fa-star"></i></span></li>
-                  <li class="disable"><span><i class="fas fa-star"></i></span></li>                  
+                  <li class="disable"><span><i class="fas fa-star"></i></span></li>
                 </ul>
               </div>
             </div>
@@ -257,7 +278,7 @@
                   <li><span><i class="fas fa-star"></i></span></li>
                   <li><span><i class="fas fa-star"></i></span></li>
                   <li><span><i class="fas fa-star"></i></span></li>
-                  <li class="disable"><span><i class="fas fa-star"></i></span></li>                  
+                  <li class="disable"><span><i class="fas fa-star"></i></span></li>
                 </ul>
               </div>
             </div>
@@ -268,232 +289,48 @@
   </section>{% endcomment %}
 	<!--================ End Testimonial Area =================-->
 
-
-
-
-	<!--================ Start Portfolio Area =================-->
-	<section class="portfolio_area" id="portfolio">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="main_title">
-						<p class="top_text">Our Portfolio <span></span></p>
-						<h2>Check Our Recent <br>
-							Client Work </h2>
-					</div>
-				</div>
-			</div>
-
-			<div class="filters portfolio-filter">
-				<ul>
-					<li class="active" data-filter="*">all</li>
-					<li data-filter=".popular">popular</li>
-					<li data-filter=".latest"> latest</li>
-					<li data-filter=".following">following</li>
-					<li data-filter=".upcoming">upcoming</li>
-				</ul>
-			</div>
-
-			<div class="filters-content">
-				<div class="row portfolio-grid">
-					<div class="grid-sizer col-md-3 col-lg-3"></div>
-					<div class="col-lg-6 col-md-6 all following">
-						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="{% static 'img/portfolio/p1.jpg' %}" alt="">
-							<div class="overlay"></div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
-								<p>Art, Illustration</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-6 col-md-6 all latest popular upcoming">
-						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="{% static 'img/portfolio/p4.jpg' %}" alt="">
-							<div class="overlay"></div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
-								<p>Art, Illustration</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-6 all latest following">
-						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="{% static 'img/portfolio/p2.jpg' %}" alt="">
-							<div class="overlay"></div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
-								<p>Art, Illustration</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-6 all latest upcoming">
-						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="{% static 'img/portfolio/p3.jpg' %}" alt="">
-							<div class="overlay"></div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
-								<p>Art, Illustration</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-6 col-md-6 all popular">
-						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="{% static 'img/portfolio/p6.jpg' %}" alt="">
-							<div class="overlay"></div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
-								<p>Art, Illustration</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-6 col-md-6 all popular latest following">
-						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="{% static 'img/portfolio/p5.jpg' %}" alt="">
-							<div class="overlay"></div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
-								<p>Art, Illustration</p>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Portfolio Area =================-->
-
-	<!--================ Start Blog Area =================-->
-	<section class="blog-area section-gap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="main_title">
-						<p class="top_text">Our blog <span></span></p>
-						<h2>Latest Story From <br>
-							Our Blog </h2>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-4 col-md-6">
-					<div class="single-blog">
-						<div class="thumb">
-							<img class="img-fluid" src="{% static 'img/b1.jpg' %}" alt="">
-						</div>
-						<div class="short_details">
-							<div class="meta-top d-flex">
-								<a href="#"><i class="ti-user"></i> Admin post</a>
-								<a href="#"><i class="ti-calendar"></i> Feb 14, 2019</a>
-							</div>
-							<a class="d-block" href="single-blog.html">
-								<h4>Shall every fourth lesser have...</h4>
-							</a>
-							<div class="text-wrap">
-								<p>
-									Have whose a two night earth she set you creeping replenish place whales move Forth first him seed green.
-								</p>
-							</div>
-							<a href="#" class="primary_btn2">Learn More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-blog">
-						<div class="thumb">
-							<img class="img-fluid" src="{% static 'img/b2.jpg' %}" alt="">
-						</div>
-						<div class="short_details">
-							<div class="meta-top d-flex">
-								<a href="#"><i class="ti-user"></i> Admin post</a>
-								<a href="#"><i class="ti-calendar"></i> Feb 14, 2019</a>
-							</div>
-							<a class="d-block" href="single-blog.html">
-								<h4>Shall every fourth lesser have...</h4>
-							</a>
-							<div class="text-wrap">
-								<p>
-									Have whose a two night earth she set you creeping replenish place whales move Forth first him seed green.
-								</p>
-							</div>
-							<a href="#" class="primary_btn2">Learn More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-blog">
-						<div class="thumb">
-							<img class="img-fluid" src="{% static 'img/b3.jpg' %}" alt="">
-						</div>
-						<div class="short_details">
-							<div class="meta-top d-flex">
-								<a href="#"><i class="ti-user"></i> Admin post</a>
-								<a href="#"><i class="ti-calendar"></i> Feb 14, 2019</a>
-							</div>
-							<a class="d-block" href="single-blog.html">
-								<h4>Shall every fourth lesser have...</h4>
-							</a>
-							<div class="text-wrap">
-								<p>
-									Have whose a two night earth she set you creeping replenish place whales move Forth first him seed green.
-								</p>
-							</div>
-							<a href="#" class="primary_btn2">Learn More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Blog Area =================-->
-
 	<!--================ Start Brands Area =================-->
 	<section class="brands-area section_gap_bottom">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="owl-carousel brand-carousel">
-						<!-- single-brand -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="main_title">
+                                <p class="top_text"><span></span></p>
+                                <h2>Çalıştığım Firmalar </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-carousel brand-carousel">
+                        <!-- single-brand -->
 						<div class="single-brand-item d-table">
 							<div class="d-table-cell">
-								<img src="{% static 'img/brands/logo1.png' %}" alt="">
-							</div>
+								<a href="https://www.trendyol.com/" target="_blank">
+                                    <img  src="{% static 'img/company/trendyol-logo.png' %}" alt="">
+                                </a>							</div>
 						</div>
 						<!-- single-brand -->
 						<div class="single-brand-item d-table">
 							<div class="d-table-cell">
-								<img src="{% static 'img/brands/logo2.png' %}" alt="">
-							</div>
+								<a href="https://www.hepsiburada.com/" target="_blank">
+                                    <img  src="{% static 'img/company/hepsiburada-logo.png' %}" alt="">
+                                </a>							</div>
 						</div>
 						<!-- single-brand -->
 						<div class="single-brand-item d-table">
 							<div class="d-table-cell">
-								<img src="{% static 'img/brands/logo3.png' %}" alt="">
+								<a href="https://www.hsbc.com.tr/" target="_blank">
+                                    <img  src="{% static 'img/company/hsbc-logo.png' %}" alt="">
+                                </a>
 							</div>
 						</div>
-						<!-- single-brand -->
-						<div class="single-brand-item d-table">
+
+                        <div class="single-brand-item d-table">
 							<div class="d-table-cell">
-								<img src="{% static 'img/brands/logo4.png' %}" alt="">
-							</div>
-						</div>
-						<!-- single-brand -->
-						<div class="single-brand-item d-table">
-							<div class="d-table-cell">
-								<img src="{% static 'img/brands/logo5.png' %}" alt="">
-							</div>
-						</div>
-						<!-- single-brand -->
-						<div class="single-brand-item d-table">
-							<div class="d-table-cell">
-								<img src="{% static 'img/brands/logo3.png' %}" alt="">
+								<a href="https://www.meplast.com.tr/homepage/" target="_blank">
+                                    <img  src="{% static 'img/company/meplast-logo.png' %}" alt="">
+                                </a>
 							</div>
 						</div>
 					</div>
@@ -511,7 +348,7 @@
 					<div class="footer_top flex-column">
 						<div class="footer_logo">
 							<a href="#">
-								<img src="{% static 'img/logo2.png' %}" alt="">
+								<img src="{% static 'img/logo3.png' %}" alt="">
 							</a>
 							<div class="d-lg-block d-none">
 								<nav class="navbar navbar-expand-lg navbar-light justify-content-center">
@@ -527,10 +364,10 @@
 							</div>
 						</div>
 						<div class="footer_social mt-lg-0 mt-4">
-							<a href="#"><i class="fab fa-facebook-f"></i></a>
-							<a href="#"><i class="fab fa-twitter"></i></a>
-							<a href="#"><i class="fab fa-skype"></i></a>
-							<a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="https://tr.linkedin.com/in/emre-atadil"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/emreatadl"><i class="fab fa-github"></i></a>
+                            <a href="https://twitter.com/emreatadil"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/emreatadil/"><i class="fab fa-instagram"></i></a>
 						</div>
 					</div>
 				</div>
@@ -538,7 +375,8 @@
 			<div class="row footer_bottom justify-content-center">
 				<p class="col-lg-8 col-sm-12 footer-text">
 					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tüm haklar saklıdır. | Development powered <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://tr.linkedin.com/in/emre-atadil" target="_blank">Emre Atadil</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tüm haklar saklıdır. | Development powered <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://tr.linkedin.com/in/emre-atadil" target="_blank">Emre Atadil</a><br>
+I love <i class="fa fa-heart" aria-hidden="true"></i> <a href="https://tr.linkedin.com/in/emre-atadil" target="_blank">Django</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 			</div>
 		</div>

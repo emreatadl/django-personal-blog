@@ -17,6 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 MEDIA_DIR = os.path.join(BASE_DIR, 'img')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
 
 
 # Quick-start development settings - unsuitable for production
@@ -34,13 +35,15 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'material.admin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'emreatadil.apps.EmreatadilConfig',
+    'blog.apps.BlogConfig',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -128,6 +131,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [STATIC_DIR]
+
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/img/'
 # LOGIN_URL = '/giris/'
