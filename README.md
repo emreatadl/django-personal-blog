@@ -1,3 +1,9 @@
+# Emre Atadil 
 
-# personalsite
+Django + PostgreSQL ile yazılmıştır.
 
+## Emeği Geçenler
+
+```
+Emre Atadil
+```
