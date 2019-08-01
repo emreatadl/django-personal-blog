@@ -128,16 +128,16 @@
 						</div>
 						<div class="short_details">
 							<div class="meta-top d-flex">
-								<a href="#"><i class="ti-user"></i>{{ last_post.author }}</a>
+								<a><i class="ti-user"></i>{{ last_post.author }}</a>
 								<a><i class="ti-calendar"></i>{{ last_post.created_on }}</a>
 							</div>
-							<a class="d-block" href="">
+							<a class="d-block" href="{% url 'blog:post_detail' last_post.slug %}">
 								<h4>{{ last_post.title }}</h4>
 							</a>
-							<div class="text-wrap">
-								<p>{{ last_post.content }}</p>
+							<div class="text">
+								<p>{{ last_post.content | safe | slice:150 }}</p>
 							</div>
-							<a href="" class="primary_btn2">Devamını Oku</a>
+							<a href="{% url 'blog:post_detail' last_post.slug %}" class="primary_btn2">Devamını Oku</a>
 						</div>
 					</div>
 				</div>
