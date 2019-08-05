@@ -101,11 +101,11 @@ def requestget(request):
     start_number = 0
     for number in itertools.count(start_number):
         status = 'Created'
-        url2 = 'https://api.trendyol.com/stagesapigw/suppliers/' + str(supplierIdInputValue) + '/orders'
+        url2 = 'https://api.trendyol.com/sapigw/suppliers/' + str(supplierIdInputValue) + '/orders'
         headers = {'Content-Type': "application/json", 'Authorization': 'Basic %s' % dec}
         try:
             response = requests.request('GET', url2, headers=headers)
-            data = response.content
+            data = response.text
             return HttpResponse(content=data)
         except requests.exceptions.Timeout as hata:
 
