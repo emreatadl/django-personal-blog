@@ -105,8 +105,8 @@ def requestget(request):
         headers = {'Content-Type': "application/json", 'Authorization': 'Basic %s' % dec}
         try:
             response = requests.request('GET', url2, headers=headers)
-            data = response.text
-            resp_status = response.status_code
+            data = (response.text)
+            resp_status = str(response.status_code)
             line = ''+resp_status+'\n '+data+''
             return HttpResponse(content=line)
         except requests.exceptions.Timeout as hata:
