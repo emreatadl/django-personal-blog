@@ -104,8 +104,8 @@ def requestget(request):
         url2 = 'https://api.trendyol.com/sapigw/suppliers/' + str(supplierIdInputValue) + '/orders'
         headers = {'Content-Type': "application/json", 'Authorization': 'Basic %s' % dec}
         try:
-            response = requests.request('GET', url2, headers=headers)
-            data = (response.text)
+            response = requests.request('GET', url2, headers=headers, timeout=20)
+            data = str(response.text)
             resp_status = str(response.status_code)
             line = ''+resp_status+'\n '+data+''
             return HttpResponse(content=line)
