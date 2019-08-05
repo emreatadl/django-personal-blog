@@ -164,7 +164,7 @@
                                   <div class="d-flex justify-content-between">
                                     <div class="d-flex align-items-center">
                                       <h5>
-                                        <a href="#">{{ comment.author }}</a>
+                                        <a href="{% url 'blog:aboutme' %}" target="_blank">{{ comment.author }}</a>
                                       </h5>
                                       <p class="date">{{ comment.created_date }}</p>
                                     </div>
@@ -173,7 +173,7 @@
                                       <a href="#" class="btn-reply text-uppercase">Yanıtla</a>
                                     </div>
                                   </div>
-                              </div>
+                              </div>a
                           </div>
                       </div>{% endfor %}
 											</div>

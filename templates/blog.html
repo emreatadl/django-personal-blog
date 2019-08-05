@@ -68,7 +68,7 @@
   <!--================ End Banner Area =================-->
 
 	<!--================Blog Area =================-->
-  <section class="blog_area section-margin">
+    <section class="blog_area section-margin">
       <div class="container">
           <div class="row">
               <div class="col-lg-8 mb-5 mb-lg-0">
@@ -77,10 +77,6 @@
                       <article class="blog_item">
                         <div class="blog_item_img">
                           <img class="card-img rounded-0" src="{{ post.model_pic.url }}" alt="">
-                          <a href="#" class="blog_item_date">
-                            <h3>{{post.created_on.date}}</h3>
-                            <p>{{ post.created_on.time }}</p>
-                          </a>
                         </div>
 
                         <div class="blog_details">
@@ -90,16 +86,11 @@
                             <p>{{post.content | safe | slice:":200" }}</p>
                             <ul class="blog-info-link">
                               <li><a href="#"><i class="far fa-user"></i> {{ post.Author }}</a></li>
-                              <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
+                              <li><a href="#"><i class="fa fa-calendar-day"></i> {{ post.created_on }}</a></li>
                             </ul>
                         </div>
                       </article>
                         {% endfor %}
-
-
-                      
-
-
                       <nav class="blog-pagination justify-content-center d-flex">
                           <ul class="pagination">
                               {% if post_page.has_previous %}
@@ -188,8 +179,9 @@
                       </aside>
 
                       <aside class="single_sidebar_widget popular_post_widget">
-                          {% for min_post in queryset %}
+
                           <h3 class="widget_title">Son Yazılar</h3>
+                          {% for min_post in queryset %}
                           <div class="media post_item">
                               <img style="width: 80px; height: 80px;" src="{{ min_post.model_pic.url }}" alt="post">
                               <div class="media-body">

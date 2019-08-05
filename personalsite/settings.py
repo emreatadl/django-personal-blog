@@ -13,11 +13,15 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 import os
 import postgres
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+PROJECT_ROOT = os.path.join(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 MEDIA_DIR = os.path.join(BASE_DIR, 'img')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
+
+#  Add configuration for static files storage using whitenoise
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
 # Quick-start development settings - unsuitable for production
@@ -29,7 +33,7 @@ SECRET_KEY = '9sx4unctsv^4eoc6grakexmti=i=7$dk5#ctyg**6i%n=b)t)6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['emreatadil.com', 'www.emreatadil.com', ]
 
 
 # Application definition
@@ -44,9 +48,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
     'ckeditor',
+
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -135,3 +141,7 @@ STATICFILES_DIRS = [STATIC_DIR]
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/img/'
 # LOGIN_URL = '/giris/'
+
+import dj_database_url
+prod_db = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)
