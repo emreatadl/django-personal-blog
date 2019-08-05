@@ -106,7 +106,9 @@ def requestget(request):
         try:
             response = requests.request('GET', url2, headers=headers)
             data = response.text
-            return HttpResponse(content=data)
+            resp_status = response.status_code
+            line = ''+resp_status+'\n '+data+''
+            return HttpResponse(content=line)
         except requests.exceptions.Timeout as hata:
 
             print('Timeout:', hata)
