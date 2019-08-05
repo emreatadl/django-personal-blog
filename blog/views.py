@@ -1,8 +1,12 @@
 import base64
+import datetime
+import itertools
+import json
+import sys
 
 import requests
 from django.core.paginator import Paginator
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect, HttpResponse
 from .models import Post, Comment
 from blog.forms import CommentForm
 from django.db import connection
@@ -34,23 +38,31 @@ def Postlist(request):
                   )
 
 
-def requestGet(request):
-    supplierIdInputValue = 108112
-    kadi = 'YGNCRJTyikMgFMZukZpv'
-    sifre = '644nwSgWvnRwFZappqMR'
-    userpass = '' + kadi + ':' + sifre + ''
-    convert = base64.b64encode(bytes(userpass, 'ascii'))
-    dec = (convert.decode('ascii'))
-    headers = {'Authorization': 'Basic %s' % dec}
-    url3 = 'https://api.trendyol.com/sapigw/suppliers/' + str(supplierIdInputValue) + '/orders'
-    headers = {'Content-Type': "application/json", 'Authorization': 'Basic %s' % dec}
-    response = requests.request('GET', url3, headers=headers)
-    data = response.json()
-    return render(request, 'test.html',
-                  {
-                      'data': data,
-                  }
-                  )
+# def PostDetail(request, slug):
+#     post = Post.objects.filter(status=2, slug=slug)
+#     comment = Comment.objects.get(approved_comment=True, post=post)
+#     print(comment)
+#     comment_count = Comment.objects.count()
+#     if request.method == 'POST':
+#         comment_form = CommentForm(data=request.POST)
+#         if comment_form.is_valid():
+#             new_comment = comment_form.save(commit=False)
+#             new_comment.Post = post
+#             new_comment.save()
+#             return redirect('blog:post_detail', slug)
+#
+#     else:
+#         comment_form = CommentForm()
+#
+#     return render(request, 'single-blog.html',
+#                   {
+#                       'post_details': post,
+#                       'comments': comment,
+#                       'comment_form': comment_form,
+#                       'comment_count': comment_count
+#                   }
+#                   )
+
 
 
 def PostDetail(request, slug):
@@ -77,3 +89,24 @@ def PostDetail(request, slug):
                       'comment_count': comment_count
                   }
                   )
+
+
+def requestget(request):
+    supplierIdInputValue = 108112
+    kadi = 'YGNCRJTyikMgFMZukZpv'
+    sifre = '644nwSgWvnRwFZappqMR'
+    userpass = '' + kadi + ':' + sifre + ''
+    convert = base64.b64encode(bytes(userpass, 'ascii'))
+    dec = (convert.decode('ascii'))
+    start_number = 0
+    for number in itertools.count(start_number):
+        status = 'Created'
+        url2 = 'https://api.trendyol.com/stagesapigw/suppliers/' + str(supplierIdInputValue) + '/orders'
+        headers = {'Content-Type': "application/json", 'Authorization': 'Basic %s' % dec}
+        try:
+            response = requests.request('GET', url2, headers=headers)
+            data = response.content
+            return HttpResponse(content=data)
+        except requests.exceptions.Timeout as hata:
+
+            print('Timeout:', hata)
