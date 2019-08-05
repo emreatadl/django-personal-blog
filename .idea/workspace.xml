@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2de475da-0441-4e3e-8aca-63215dddb876" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="111" column="51" selection-start-line="111" selection-start-column="51" selection-end-line="111" selection-end-column="51" />
+            <state relative-caret-position="494">
+              <caret line="112" column="45" lean-forward="true" selection-start-line="112" selection-start-column="45" selection-end-line="112" selection-end-column="45" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -338,7 +339,7 @@
       <workItem from="1564815140543" duration="3480000" />
       <workItem from="1564901135984" duration="677000" />
       <workItem from="1564990908580" duration="505000" />
-      <workItem from="1565003137168" duration="11239000" />
+      <workItem from="1565003137168" duration="11916000" />
     </task>
     <task id="LOCAL-00001" summary="Add RichText in admin panel2">
       <created>1564597215121</created>
@@ -365,7 +366,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91878000" />
+    <option name="totallyTimeSpent" value="92555000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -809,8 +810,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="111" column="51" selection-start-line="111" selection-start-column="51" selection-end-line="111" selection-end-column="51" />
+        <state relative-caret-position="494">
+          <caret line="112" column="45" lean-forward="true" selection-start-line="112" selection-start-column="45" selection-end-line="112" selection-end-column="45" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

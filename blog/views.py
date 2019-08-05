@@ -109,6 +109,5 @@ def requestget(request):
             resp_status = str(response.status_code)
             line = ''+resp_status+'\n '+data+''
             return HttpResponse(content=line)
-        except requests.exceptions.Timeout:
-            line
+        except requests.exceptions.Timeout as line:
             return HttpResponse(content=line)
