@@ -103,3 +103,4 @@ Werkzeug==0.15.4
 whichcraft==0.5.2
 xlrd==1.2.0
 yarl==1.3.0
+django-heroku
