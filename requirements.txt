@@ -19,6 +19,7 @@ dash-html-components==0.16.0
 dash-renderer==0.24.0
 dash-table==3.7.0
 decorator==4.4.0
+dj-database-url==0.5.0
 Django==2.2.3
 django-ckeditor==5.7.1
 django-classy-tags==0.9.0
@@ -33,6 +34,7 @@ django-elasticsearch-dsl-drf==0.18
 django-filter==2.1.0
 django-fluent-comments==2.1
 django-formtools==2.1
+django-heroku==0.3.1
 django-js-asset==1.2.2
 django-material-admin==1.3.3
 django-nine==0.2.2
@@ -40,12 +42,14 @@ django-rest-swagger==2.2.0
 django-scheduler==0.8.8
 django-sekizai==1.0.0
 django-social-share==1.3.2
+django-suit==2.0a1
 django-tag-parser==3.1
 django-tinymce==2.8.0
 django-tinymce4-lite==1.7.5
 django-treebeard==4.3
 djangocms-admin-style==1.4.0
 djangorestframework==3.9.4
+docutils==0.15.1
 Eel==0.10.4
 elasticsearch==6.4.0
 elasticsearch-dsl==6.4.0
@@ -55,6 +59,7 @@ future==0.17.1
 gevent==1.4.0
 gevent-websocket==0.10.1
 greenlet==0.4.15
+gunicorn==19.9.0
 icalendar==4.0.3
 idna==2.8
 ipython-genutils==0.2.0
@@ -101,6 +106,6 @@ urllib3==1.25.2
 virtualenv==16.6.0
 Werkzeug==0.15.4
 whichcraft==0.5.2
+whitenoise==4.1.3
 xlrd==1.2.0
 yarl==1.3.0
-django-heroku
