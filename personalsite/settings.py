@@ -140,3 +140,7 @@ STATICFILES_DIRS = [STATIC_DIR]
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/img/'
 # LOGIN_URL = '/giris/'
+
+# Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())
