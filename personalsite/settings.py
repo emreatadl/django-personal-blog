@@ -26,9 +26,6 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
-# Honor the 'X-Forwarded-Proto' header for request.is_secure()
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '9sx4unctsv^4eoc6grakexmti=i=7$dk5#ctyg**6i%n=b)t)6'
 
