@@ -10,7 +10,8 @@ from blog import views
 urlpatterns = [
     path('admin/', include('material.admin.urls')),
     url(r'', include('blog.urls')),
-    url(r'tests', views.requestget, name='requestGet')
+    url(r'tests', views.requestget, name='requestGet'),
+    url(r'partner', views.returnPartner, name='returnPartner')
 ]
 
 

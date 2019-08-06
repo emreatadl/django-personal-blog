@@ -31,8 +31,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @media (min-width: 1200px) {
-  .pb-xl-300px {
-    padding-bottom: 300px !important;
+  .pb-xl-30px {
+    padding-bottom: 30px !important;
   }
 }
 
@@ -992,7 +992,7 @@ button.primary_btn {
 }
 
 .blog_item_img .blog_item_date h3 {
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 600;
   color: #fff;
   margin-bottom: 0;
@@ -1001,7 +1001,7 @@ button.primary_btn {
 
 @media (min-width: 768px) {
   .blog_item_img .blog_item_date h3 {
-    font-size: 30px;
+    font-size: 15px;
   }
 }
 
@@ -1011,7 +1011,7 @@ button.primary_btn {
 
 @media (min-width: 768px) {
   .blog_item_img .blog_item_date p {
-    font-size: 18px;
+    font-size: 13px;
   }
 }
 

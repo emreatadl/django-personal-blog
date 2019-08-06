@@ -6,7 +6,7 @@ import sys
 
 import requests
 from django.core.paginator import Paginator
-from django.shortcuts import render, get_object_or_404, redirect, HttpResponse
+from django.shortcuts import render, get_object_or_404, redirect, HttpResponse, HttpResponseRedirect
 from .models import Post, Comment
 from blog.forms import CommentForm
 from django.db import connection
@@ -111,3 +111,7 @@ def requestget(request):
             return HttpResponse(content=line)
         except requests.exceptions.Timeout as line:
             return HttpResponse(content=line)
+
+
+def returnPartner(request):
+    return HttpResponseRedirect(redirect_to='https://partner.trendyol.com/#/')
