@@ -32,7 +32,7 @@ SECRET_KEY = '9sx4unctsv^4eoc6grakexmti=i=7$dk5#ctyg**6i%n=b)t)6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['emreatadil.com', 'www.emreatadil.com', ]
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', 'emreatadil.herokuapp.com']
 
 
 # Application definition
