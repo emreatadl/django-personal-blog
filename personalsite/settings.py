@@ -16,8 +16,8 @@ PROJECT_ROOT = os.path.join(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
-MEDIA_DIR = os.path.join(BASE_DIR, 'img')
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
+MEDIA_DIR = os.path.join(BASE_DIR, 'static/img')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 #  Add configuration for static files storage using whitenoise
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
@@ -89,10 +89,10 @@ WSGI_APPLICATION = 'personalsite.wsgi.application'
 DATABASES = {
     'default': {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        'NAME': 'emre_atadil',
-        'USER': 'postgres',
-        'PASSWORD': 'Ea.1907fb0',
-        'HOST': 'localhost',
+        'NAME': 'd4b1d75vsvmd4',
+        'USER': 'fwnhbzipaywsnr',
+        'PASSWORD': '716b7efa40dc318cb5aaa92f8fb728328f4c9771fe2c9cbf399172269f24beb3',
+        'HOST': 'ec2-174-129-226-232.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }

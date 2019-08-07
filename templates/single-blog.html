@@ -402,9 +402,9 @@
 								<nav class="navbar navbar-expand-lg navbar-light justify-content-center">
 									<div class="collapse navbar-collapse offset">
 										<ul class="nav navbar-nav menu_nav mx-auto">
-											<li class="nav-item"><a class="nav-link text-white" href="index.html">Anasayfa</a></li>
-											<li class="nav-item"><a class="nav-link text-white" href="about.html">Hakkımda</a></li>
-											<li class="nav-item"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+											<li class="nav-item"><a class="nav-link text-white" href="{% url 'blog:index' %}">Anasayfa</a></li>
+											<li class="nav-item"><a class="nav-link text-white" href="{% url 'blog:aboutme' %}">Hakkımda</a></li>
+											<li class="nav-item"><a class="nav-link text-white" href="{% url 'blog:home' %}">Blog</a></li>
 											<li class="nav-item"><a class="nav-link text-white" href="services.html">Projelerim </a></li>
 										</ul>
 									</div>
