@@ -13,7 +13,7 @@ from django.db import connection
 
 
 def index(request):
-    queryset_index = Post.objects.filter(status=2).order_by('-created_on')
+    queryset_index = Post.objects.filter(status=2).order_by('-created_on')[:3]
     return render(request, 'index.html',
                   {
                       'queryset_index': queryset_index,

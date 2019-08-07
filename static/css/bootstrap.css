@@ -6561,7 +6561,8 @@ button.bg-dark:hover {
 }
 
 .d-block {
-    display: block !important
+    display: block !important;
+    height: 60px !important;
 }
 
 .d-table {

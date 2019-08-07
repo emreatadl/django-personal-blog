@@ -34,8 +34,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['emreatadil.com', 'www.emreatadil.com', ]
 
-THUMBNAIL_HIGH_RESOLUTION = True
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -48,9 +46,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
     'ckeditor',
-    'easy_thumbnails',
-    'filer',
-    'mptt',
 ]
 
 MIDDLEWARE = [
@@ -143,7 +138,7 @@ STATICFILES_DIRS = (
 )
 
 MEDIA_ROOT = MEDIA_DIR
-MEDIA_URL = '/img/'
+MEDIA_URL = 'static/img/'
 # LOGIN_URL = '/giris/'
 
 # Configure Django App for Heroku.
