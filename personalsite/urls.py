@@ -8,11 +8,11 @@ from blog import views
 
 
 urlpatterns = [
-    path('admin/', include('material.admin.urls')),
+    path('ea/kp/admin', include('material.admin.urls')),
     url(r'', include('blog.urls')),
     url(r'tests', views.requestget, name='requestGet'),
 ]
 
 
 if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.MEDIA_ROOT)
