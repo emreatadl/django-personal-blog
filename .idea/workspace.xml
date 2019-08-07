@@ -256,6 +256,19 @@
             <path>
               <item name="personalsite" type="b2602c69:ProjectViewProjectNode" />
               <item name="personalsite" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="personalsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personalsite" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="personalsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personalsite" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -359,7 +372,7 @@
       <workItem from="1565075688114" duration="1059000" />
       <workItem from="1565078192989" duration="2108000" />
       <workItem from="1565116357309" duration="3602000" />
-      <workItem from="1565167508938" duration="1340000" />
+      <workItem from="1565167508938" duration="1670000" />
     </task>
     <task id="LOCAL-00001" summary="Add RichText in admin panel2">
       <created>1564597215121</created>
@@ -386,7 +399,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101411000" />
+    <option name="totallyTimeSpent" value="101741000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
