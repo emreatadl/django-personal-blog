@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="img/favicon.png" type="image/png">
-	<title>{{ post_details.title }} | Emre Atadil</title>
+	<title>{{ categories.name}} | Emre Atadil</title>
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
 	<link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
@@ -67,23 +67,34 @@
   <!--================ End Banner Area =================-->
 
 	<!--================Blog Area =================-->
-	<section class="blog_area single-post-area section-margin">
-			<div class="container">
-					<div class="row">
-							<div class="col-lg-13 posts-list">
-									<div class="single-post">
-                                        {% for category_list_post in post_category %}
-											<div class="blog_details">
-													<h2>{{ category_list_post.title }}</h2>
-                              <ul class="blog-info-link mt-3 mb-4">
-                                <li><a href="#"><i class="ti-user"></i>  {{ category_list_post.author }}</a></li>
-                                <li><a href="#"><i class="ti-timer"></i> {{ category_list_post.created_on}}</a></li>
-                              </ul>
-                                <p class="excert">{{ category_list_post.content | safe | slice:":200"}}
-                                </p>
-
-											</div>{% endfor %}
-                                    </div></div></div></div></section>
+	<section class="blog-area section-gap">
+		<div class="container">
+			<div class="row">
+                {% for last_post in post_category %}
+				<div class="col-lg-4 col-md-6">
+					<div class="single-blog">
+						<div class="thumb">
+							<img style="height: 200px; width: 100%;" class="img-fluid" src="{{ last_post.model_pic.url }}" alt="">
+						</div>
+						<div class="short_details">
+							<div class="meta-top d-flex">
+								<a><i class="ti-user"></i>{{ last_post.author }}</a>
+								<a><i class="ti-calendar"></i>{{ last_post.created_on }}</a>
+							</div>
+							<a class="d-block" href="{% url 'blog:post_detail' last_post.slug %}">
+								<h4>{{ last_post.title }}</h4>
+							</a>
+							<div class="text">
+								<p>{{ last_post.content | safe | slice:150 }}...</p>
+							</div>
+							<a href="{% url 'blog:post_detail' last_post.slug %}" class="primary_btn2">Devamını Oku</a>
+						</div>
+					</div>
+				</div>
+                {% endfor %}
+			</div>
+		</div>
+	</section>
 	<!--================Blog Area =================-->
 
 
