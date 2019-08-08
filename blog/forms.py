@@ -6,4 +6,8 @@ class CommentForm(forms.ModelForm):
 
     class Meta:
         model = Comment
-        fields = ('author', 'comment','comment_image',)
+        fields = (
+            'author',
+            'email',
+            'comment'
+        )

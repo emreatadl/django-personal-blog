@@ -157,7 +157,7 @@
                         <div class="single-comment justify-content-between d-flex">
                           <div class="user justify-content-between d-flex">
                               <div class="thumb">
-                                  <img src="img/blog/c1.png" alt="">
+                                  <img src="{% static 'img/blog/c1.png' %}" alt="">
                               </div>
                               <div class="desc">
                                   <p class="comment">{{ comment.comment|linebreaks }}</p>
@@ -173,31 +173,32 @@
                                       <a href="#" class="btn-reply text-uppercase">Yanıtla</a>
                                     </div>
                                   </div>
-                              </div>a
+                              </div>
                           </div>
                       </div>{% endfor %}
 											</div>
 									</div>
 									<div class="comment-form">
 											<h4>Hızlı sor kombo yapıcam</h4>
-	                                        <form class="form-contact comment_form" action="." id="CommentForm" method="POST">
-                                                {% csrf_token %}
+                                            <form class="form-contact comment_form" action="." id="CommentForm" method="POST">{% csrf_token %}
                                                 <div class="row">
-                                                  <div class="col-12">
-                                                    <div class="form-group">
-                                                        <textarea class="form-control w-100" name="comment" id="comment" cols="30" rows="9" placeholder="Yorumlarınızı bekliyorum..."></textarea>
-                                                    </div>
-                                                  </div>
                                                   <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                      <input class="form-control" name="name" id="name" type="text" placeholder="İsim">
-                                                    </div>
+                                                      <div class="form-group">
+                                                          <label>İsim Soyisim:</label>
+                                                          <input class="au-input au-input--full" type="text" name="author">
+                                                      </div>
                                                   </div>
-                                                  <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                      <input class="form-control" name="email" id="email" type="email" placeholder="Email">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                          <label>Email:</label>
+                                                          <input class="au-input au-input--full" type="email" name="email">                                                        </div>
                                                     </div>
-                                                  </div>
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label>Yorum:</label>
+                                                            <textarea class="form-control w-100" name="comment"></textarea>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="form-group">
                                                   <button type="submit" class="primary_btn button-contactForm" href="">Gönder</button>
@@ -222,85 +223,32 @@
                       </aside>
 
                       <aside class="single_sidebar_widget post_category_widget">
-                        <h4 class="widget_title">Category</h4>
+                        <h4 class="widget_title">Kategori</h4>
                         <ul class="list cat-list">
+                            {% for categories in category_filter %}
                             <li>
-                                <a href="#" class="d-flex">
-                                    <p>Resaurant food</p>
-                                    <p>(37)</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Travel news</p>
-                                    <p>(10)</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Modern technology</p>
-                                    <p>(03)</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Product</p>
-                                    <p>(11)</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Inspiration</p>
-                                    <p>(21)</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Health Care</p>
-                                    <p>(21)</p>
+                                <a href="/category/{{ categories.slug }}" class="d-flex">
+                                    <p>{{ categories.name }}</p>
                                 </a>
                             </li>
                         </ul>
+                          {% endfor %}
                       </aside>
 
                       <aside class="single_sidebar_widget popular_post_widget">
-                          <h3 class="widget_title">Recent Post</h3>
+
+                          <h3 class="widget_title">Son Yazılar</h3>
+                          {% for min_post in last_content %}
                           <div class="media post_item">
-                              <img src="img/blog/popular-post/post1.jpg" alt="post">
+                              <img style="width: 80px; height: 80px;" src="{% url 'blog:index' %}{{  min_post.model_pic.url }}" alt="post">
                               <div class="media-body">
-                                  <a href="single-blog.html">
-                                      <h3>From life was you fish...</h3>
+                                  <a href="{% url 'blog:post_detail' min_post.slug %}">
+                                      <h3>{{ min_post.title }}</h3>
                                   </a>
-                                  <p>January 12, 2019</p>
+                                  <p>{{ min_post.created_on }}</p>
                               </div>
                           </div>
-                          <div class="media post_item">
-                              <img src="img/blog/popular-post/post2.jpg" alt="post">
-                              <div class="media-body">
-                                  <a href="single-blog.html">
-                                      <h3>The Amazing Hubble</h3>
-                                  </a>
-                                  <p>02 Hours ago</p>
-                              </div>
-                          </div>
-                          <div class="media post_item">
-                              <img src="img/blog/popular-post/post3.jpg" alt="post">
-                              <div class="media-body">
-                                  <a href="single-blog.html">
-                                      <h3>Astronomy Or Astrology</h3>
-                                  </a>
-                                  <p>03 Hours ago</p>
-                              </div>
-                          </div>
-                          <div class="media post_item">
-                              <img src="img/blog/popular-post/post4.jpg" alt="post">
-                              <div class="media-body">
-                                  <a href="single-blog.html">
-                                      <h3>Asteroids telescope</h3>
-                                  </a>
-                                  <p>01 Hours ago</p>
-                              </div>
-                          </div>
+                          {% endfor %}
                       </aside>
                       <aside class="single_sidebar_widget tag_cloud_widget">
                           <h4 class="widget_title">Tag Clouds</h4>

@@ -7,8 +7,8 @@ import sys
 import requests
 from django.core.paginator import Paginator
 from django.shortcuts import render, get_object_or_404, redirect, HttpResponse, HttpResponseRedirect
-from .models import Post, Comment
-from blog.forms import CommentForm
+from .models import Post, Comment, Category
+from .forms import CommentForm
 from django.db import connection
 
 
@@ -38,43 +38,17 @@ def Postlist(request):
                   )
 
 
-# def PostDetail(request, slug):
-#     post = Post.objects.filter(status=2, slug=slug)
-#     comment = Comment.objects.get(approved_comment=True, post=post)
-#     print(comment)
-#     comment_count = Comment.objects.count()
-#     if request.method == 'POST':
-#         comment_form = CommentForm(data=request.POST)
-#         if comment_form.is_valid():
-#             new_comment = comment_form.save(commit=False)
-#             new_comment.Post = post
-#             new_comment.save()
-#             return redirect('blog:post_detail', slug)
-#
-#     else:
-#         comment_form = CommentForm()
-#
-#     return render(request, 'single-blog.html',
-#                   {
-#                       'post_details': post,
-#                       'comments': comment,
-#                       'comment_form': comment_form,
-#                       'comment_count': comment_count
-#                   }
-#                   )
-
-
-
 def PostDetail(request, slug):
     post = Post.objects.get(status=2, slug=slug)  # notice the get instead of filter
-    comment = Comment.objects.filter(approved_comment=True, post=post)
-    print(post)
-    comment_count = comment.count()
+    comments = post.comments.filter(approved_comment=True, post_id=post.id)
+    last_content = Post.objects.filter(status=2).order_by('-created_on')[:3]
+    comment_count = comments.count()
+    category_filter = Category.objects.filter()
     if request.method == 'POST':
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
             new_comment = comment_form.save(commit=False)
-            new_comment.Post = post
+            new_comment.post = post
             new_comment.save()
             return redirect('blog:post_detail', slug)
 
@@ -84,30 +58,21 @@ def PostDetail(request, slug):
     return render(request, 'single-blog.html',
                   {
                       'post_details': post,
-                      'comments': comment,
+                      'last_content': last_content,
+                      'comments': comments,
                       'comment_form': comment_form,
-                      'comment_count': comment_count
+                      'comment_count': comment_count,
+                      'category_filter': category_filter
                   }
                   )
 
 
-def requestget(request):
-    supplierIdInputValue = 108112
-    kadi = 'YGNCRJTyikMgFMZukZpv'
-    sifre = '644nwSgWvnRwFZappqMR'
-    userpass = '' + kadi + ':' + sifre + ''
-    convert = base64.b64encode(bytes(userpass, 'ascii'))
-    dec = (convert.decode('ascii'))
-    start_number = 0
-    for number in itertools.count(start_number):
-        status = 'Created'
-        url2 = 'https://api.trendyol.com/sapigw/suppliers/' + str(supplierIdInputValue) + '/orders'
-        headers = {'Content-Type': "application/json", 'Authorization': 'Basic %s' % dec}
-        try:
-            response = requests.request('GET', url2, headers=headers, timeout=20)
-            data = str(response.text)
-            resp_status = str(response.status_code)
-            line = ''+resp_status+'\n '+data+''
-            return HttpResponse(content=line)
-        except requests.exceptions.Timeout as line:
-            return HttpResponse(content=line)
+def category_list(request, slug):
+    categories = Category.objects.get(slug=slug, )
+    post_category = Post.objects.filter(category_id=categories)
+    return render(request, 'category.html',
+                  {
+                      'post_category': post_category,
+                      'categories': categories,
+                  }
+                  )

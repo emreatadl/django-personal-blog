@@ -2,7 +2,28 @@ from ckeditor.fields import RichTextField
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
-from tinymce.models import HTMLField
+
+
+class Category(models.Model):
+    name = models.CharField(max_length=200)
+    slug = models.SlugField()
+    parent = models.ForeignKey('self', on_delete=models.CASCADE, blank=True, null=True, related_name='children')
+
+    class Meta:
+        unique_together = ('slug', 'parent',)    #enforcing that there can not be two
+        verbose_name_plural = "categories"       #categories under a parent with same
+                                                 #slug
+
+    def __str__(self):                           # __str__ method elaborated later in
+        full_path = [self.name]                  # post.  use __unicode__ in place of
+                                                 # __str__ if you are using python 2
+        k = self.parent
+
+        while k is not None:
+            full_path.append(k.name)
+            k = k.parent
+
+        return ' -> '.join(full_path[::-1])
 
 STATUS = (
     (0, "Taslak"),
@@ -14,6 +35,7 @@ STATUS = (
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True, verbose_name='Sayfa Başlığı')
     slug = models.SlugField(max_length=200, unique=True, verbose_name='Adres URL')
+    category = models.ForeignKey('Category', on_delete=models.CASCADE, null=True, blank=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='blog_posts', verbose_name='İçerik Sahibi')
     updated_on = models.DateTimeField(auto_now=True)
     content = RichTextField(blank=True, null=True, verbose_name='İçerik')
@@ -30,12 +52,14 @@ class Post(models.Model):
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
-    # reply_to = models.ForeignKey('self', related_name='replies', null=True, blank=True)
     author = models.CharField(max_length=200)
+    email = models.EmailField(max_length=100)
     comment = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
     approved_comment = models.BooleanField(default=False)
-    comment_image = models.ImageField(upload_to='uploads/', default='Görsel yükleyebilirsiniz...')
+
+    class Meta:
+        ordering = ('created_date',)
 
     def approve(self):
         self.approved_comment = True

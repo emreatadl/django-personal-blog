@@ -1,4 +1,4 @@
-from .models import Post, Comment
+from .models import Post, Comment, Category
 from material.admin import admin
 from material.admin.options import MaterialModelAdmin
 from material.admin.sites import site
@@ -22,3 +22,4 @@ class CommentAdmin(MaterialModelAdmin):
 
 site.register(Post, PostAdmin)
 site.register(Comment, CommentAdmin)
+site.register(Category)

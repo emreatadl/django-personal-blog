@@ -10,7 +10,6 @@ from blog import views
 urlpatterns = [
     path('ea/kp/admin/', include('material.admin.urls')),
     url(r'', include('blog.urls')),
-    url(r'tests', views.requestget, name='requestGet'),
 ]
 
 

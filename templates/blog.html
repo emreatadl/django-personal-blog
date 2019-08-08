@@ -76,7 +76,7 @@
                       {% for post in queryset %}
                       <article class="blog_item">
                         <div class="blog_item_img">
-                          <img class="card-img rounded-0" src="{{ post.model_pic.url }}" alt="">
+                          <img class="card-img rounded-0" src="{% url 'blog:index' %}{{ post.model_pic.url }}" alt="">
                         </div>
 
                         <div class="blog_details">
@@ -185,7 +185,7 @@
                           <div class="media post_item">
                               <img style="width: 80px; height: 80px;" src="{{ min_post.model_pic.url }}" alt="post">
                               <div class="media-body">
-                                  <a href="single-blog.html">
+                                  <a href="{% url 'blog:post_detail' min_post.slug %}">
                                       <h3>{{ min_post.title }}</h3>
                                   </a>
                                   <p>{{ min_post.created_on }}</p>
