@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2de475da-0441-4e3e-8aca-63215dddb876" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/personalsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/personalsite/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="2de475da-0441-4e3e-8aca-63215dddb876" name="Default Changelist" comment="" />
     <list id="09b481da-d58b-4da7-9ff3-3f9ea6b80fb2" name="Revert: add page (aa18bbd0)" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/personalsite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            <state relative-caret-position="420">
+              <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -400,7 +398,7 @@
       <workItem from="1565167508938" duration="14119000" />
       <workItem from="1565270873703" duration="2000" />
       <workItem from="1565280451015" duration="2741000" />
-      <workItem from="1565289934914" duration="9845000" />
+      <workItem from="1565289934914" duration="9931000" />
     </task>
     <task id="LOCAL-00001" summary="Add RichText in admin panel2">
       <created>1564597215121</created>
@@ -427,7 +425,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126778000" />
+    <option name="totallyTimeSpent" value="126864000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -440,9 +438,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6481752" visible="true" weight="0.15403423" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6481752" visible="true" weight="0.15403423" />
       <window_info id="Structure" order="1" sideWeight="0.28467155" side_tool="true" weight="0.3294621" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Database" order="3" sideWeight="0.71532845" weight="0.21026894" />
@@ -457,7 +454,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32921812" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" weight="0.32921812" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32407406" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32407406" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32921812" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32921812" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -898,8 +895,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/personalsite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        <state relative-caret-position="420">
+          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
         </state>
       </provider>
     </entry>
