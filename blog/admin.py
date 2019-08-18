@@ -4,7 +4,7 @@ from material.admin.options import MaterialModelAdmin
 from material.admin.sites import site
 
 
-site.site_header = 'EA Admin Dashboard'
+site.site_header = 'Admin Dashboard'
 site.site_title = 'Emre Atadil'
 site.index_title = 'Admin Dashboard'
 
@@ -17,7 +17,7 @@ class PostAdmin(MaterialModelAdmin):
 
 
 class CommentAdmin(MaterialModelAdmin):
-    list_display = ('author', 'comment', 'approved_comment', 'created_date')
+    list_display = ('author', 'comment', 'email', 'approved_comment', 'created_date')
 
 
 site.register(Post, PostAdmin)
