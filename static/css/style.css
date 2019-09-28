@@ -906,7 +906,7 @@ button.primary_btn {
 }
 
 .blog_item {
-  margin-bottom: 0;
+  display: flex;
 }
 
 .blog_details {
@@ -972,7 +972,6 @@ button.primary_btn {
   position: relative;
   float: left;
   width: calc(100% - 754px);
-  margin: 15px 0 0 0;
 }
 
 .blog_item_img .blog_item_date {

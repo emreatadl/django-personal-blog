@@ -86,7 +86,7 @@
                             </a>
                             <p>{{post.content | safe | slice:":200" }}...</p>
                             <ul class="blog-info-link">
-                              <li><a href="#"><i class="far fa-user"></i> {{ post.author }}</a></li>
+                              <li><a href="{% url 'blog:aboutme' %}" target="_blank"><i class="far fa-user"></i> {{ post.author }}</a></li>
                               <li><a href="#"><i class="fa fa-calendar-day"></i> {{ post.created_on }}</a></li>
                             </ul>
                         </div>
@@ -125,20 +125,6 @@
               </div>
               <div class="col-sm-12 col-lg-3">
                   <div class="blog_right_sidebar">
-                      <aside class="single_sidebar_widget search_widget">
-                          <form action="#">
-                            <div class="form-group">
-                              <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Ne getireyim sana">
-                                <div class="input-group-append">
-                                  <button class="btn" type="button"><i class="ti-search"></i></button>
-                                </div>
-                              </div>
-                            </div>
-                            <button class="primary_btn rounded-0 primary-bg text-white w-100" type="submit">Bence Ara</button>
-                          </form>
-                      </aside>
-
                       <aside class="single_sidebar_widget post_category_widget">
                         <h4 class="widget_title">Kategori</h4>
                         <ul class="list cat-list">
@@ -157,7 +143,7 @@
                           <h3 class="widget_title">Son Yazılar</h3>
                           {% for min_post in queryset %}
                           <div class="media post_item">
-                              <img style="width: 80px; height: 80px;" src="{% url 'blog:index' %}{{ min_post.model_pic.url }}" onerror="this.src = 'https://anotherjavaduke.files.wordpress.com/2018/08/avataaars-2.png'" alt="post">
+                              {% cloudinary min_post.model_pic format="jpg" style="width: 80px; height: 80px;" onerror="this.src = 'https://res.cloudinary.com/girdap/image/upload/v1569663073/default-image_grbzgw.png'" %}
                               <div class="media-body">
                                   <a href="{% url 'blog:post_detail' min_post.slug %}">
                                       <h3>{{ min_post.title }}</h3>
