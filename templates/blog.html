@@ -1,5 +1,6 @@
 {%load static%}
 {% block body_block %}
+{% load cloudinary %}
 <!doctype html>
 <html lang="en">
 
@@ -71,26 +72,28 @@
     <section class="blog_area section-margin">
       <div class="container">
           <div class="row">
-              <div class="col-lg-8 mb-5 mb-lg-0">
+              <div class="col-sm-12 col-md-9">
                   <div class="blog_left_sidebar">
                       {% for post in queryset %}
                       <article class="blog_item">
                         <div class="blog_item_img">
-                          <img class="card-img rounded-0" src="{% url 'blog:index' %}{{ post.model_pic.url }}" alt="">
+                            {% cloudinary post.model_pic format="jpg" class="card-img rounded-0" onerror="this.src = 'https://res.cloudinary.com/girdap/image/upload/v1569663073/default-image_grbzgw.png'" %}
                         </div>
 
-                        <div class="blog_details">
+                        <div class="blog_details" style="width: calc(100% - 244px); float: right;">
                             <a class="d-inline-block" href="{% url 'blog:post_detail' post.slug %}">
                                 <h2>{{ post.title }}</h2>
                             </a>
-                            <p>{{post.content | safe | slice:":200" }}</p>
+                            <p>{{post.content | safe | slice:":200" }}...</p>
                             <ul class="blog-info-link">
                               <li><a href="#"><i class="far fa-user"></i> {{ post.author }}</a></li>
                               <li><a href="#"><i class="fa fa-calendar-day"></i> {{ post.created_on }}</a></li>
                             </ul>
                         </div>
                       </article>
+                          <div style="margin-bottom: 20px"> </div>
                         {% endfor %}
+                  <div>
                       <nav class="blog-pagination justify-content-center d-flex">
                           <ul class="pagination">
                               {% if post_page.has_previous %}
@@ -103,7 +106,7 @@
                               </li>
                               {% endif %}
                               <li class="page-item active">
-                                  <a class="page-link">{{ post_page.number }} <span class="sr-only">(current)</span></a>
+                                  <a class="page-link">{{ post_page.number }} <span class="sr-only">İlk Sayfa</span></a>
                               </li>
                               {% if post_page.has_next %}
                                 <li class="page-item">
@@ -117,10 +120,10 @@
                                 </li>
                               {% endif %}
                           </ul>
-                      </nav>
+                      </nav></div>
                   </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-sm-12 col-lg-3">
                   <div class="blog_right_sidebar">
                       <aside class="single_sidebar_widget search_widget">
                           <form action="#">
@@ -139,43 +142,14 @@
                       <aside class="single_sidebar_widget post_category_widget">
                         <h4 class="widget_title">Kategori</h4>
                         <ul class="list cat-list">
+                            {% for categories in category_filter %}
                             <li>
-                                <a href="#" class="d-flex">
-                                    <p>Resaurant food</p>
-                                    <p>(37)</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Travel news</p>
-                                    <p>(10)</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Modern technology</p>
-                                    <p>(03)</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Product</p>
-                                    <p>(11)</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Inspiration</p>
-                                    <p>21</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Health Care (21)</p>
-                                    <p>09</p>
+                                <a href="/kategori/{{ categories.slug }}/" class="d-flex">
+                                    <p>{{ categories.name }}</p>
                                 </a>
                             </li>
                         </ul>
+                          {% endfor %}
                       </aside>
 
                       <aside class="single_sidebar_widget popular_post_widget">
@@ -183,7 +157,7 @@
                           <h3 class="widget_title">Son Yazılar</h3>
                           {% for min_post in queryset %}
                           <div class="media post_item">
-                              <img style="width: 80px; height: 80px;" src="{{ min_post.model_pic.url }}" alt="post">
+                              <img style="width: 80px; height: 80px;" src="{% url 'blog:index' %}{{ min_post.model_pic.url }}" onerror="this.src = 'https://anotherjavaduke.files.wordpress.com/2018/08/avataaars-2.png'" alt="post">
                               <div class="media-body">
                                   <a href="{% url 'blog:post_detail' min_post.slug %}">
                                       <h3>{{ min_post.title }}</h3>
@@ -192,45 +166,6 @@
                               </div>
                           </div>
                           {% endfor %}
-                      </aside>
-                      <aside class="single_sidebar_widget tag_cloud_widget">
-                          <h4 class="widget_title">Tag Clouds</h4>
-                          <ul class="list">
-                              <li>
-                                  <a href="#">project</a>
-                              </li>
-                              <li>
-                                  <a href="#">love</a>
-                              </li>
-                              <li>
-                                  <a href="#">technology</a>
-                              </li>
-                              <li>
-                                  <a href="#">travel</a>
-                              </li>
-                              <li>
-                                  <a href="#">restaurant</a>
-                              </li>
-                              <li>
-                                  <a href="#">life style</a>
-                              </li>
-                              <li>
-                                  <a href="#">design</a>
-                              </li>
-                              <li>
-                                  <a href="#">illustration</a>
-                              </li>
-                          </ul>
-                      </aside>
-                      <aside class="single_sidebar_widget newsletter_widget">
-                        <h4 class="widget_title">Newsletter</h4>
-
-                        <form action="#">
-                          <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Enter email" required>
-                          </div>
-                          <button class="primary_btn rounded-0 primary-bg text-white w-100" type="submit">Subscribe</button>
-                        </form>
                       </aside>
                   </div>
               </div>

@@ -607,7 +607,7 @@ pre code {
 
 @media (min-width:1200px) {
     .container {
-        max-width: 1140px
+        max-width: 1370px
     }
 }
 
@@ -4691,7 +4691,8 @@ input[type=submit].btn-block {
 
 .card-img {
     width: 100%;
-    border-radius: calc(.25rem - 1px)
+    border-radius: calc(.25rem - 1px);
+    height: 244px;
 }
 
 .card-img-top {
@@ -4890,6 +4891,7 @@ input[type=submit].btn-block {
     display: -ms-flexbox;
     display: flex;
     padding-left: 0;
+    margin-top: 15px;
     list-style: none;
     border-radius: .25rem
 }
@@ -6866,6 +6868,7 @@ button.bg-dark:hover {
 }
 
 .justify-content-between {
+
     -ms-flex-pack: justify !important;
     justify-content: space-between !important
 }

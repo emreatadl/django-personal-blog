@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6 {
 
 @media (min-width: 1200px) {
   .section-margin {
-    margin: 120px 0;
+    margin: 40px 0;
   }
 }
 
@@ -906,7 +906,7 @@ button.primary_btn {
 }
 
 .blog_item {
-  margin-bottom: 50px;
+  margin-bottom: 0;
 }
 
 .blog_details {
@@ -916,7 +916,7 @@ button.primary_btn {
 
 @media (min-width: 768px) {
   .blog_details {
-    padding: 60px 30px 35px 35px;
+    padding: 40px 8px 20px 10px;
   }
 }
 
@@ -970,6 +970,9 @@ button.primary_btn {
 
 .blog_item_img {
   position: relative;
+  float: left;
+  width: calc(100% - 754px);
+  margin: 15px 0 0 0;
 }
 
 .blog_item_img .blog_item_date {
@@ -1197,6 +1200,7 @@ button.primary_btn {
 
 .blog-pagination {
   margin-top: 80px;
+  width: 100%;
 }
 
 .blog-pagination .page-link {
@@ -1551,7 +1555,7 @@ button.primary_btn {
 
 .comments-area .date {
   font-size: 14px;
-  color: #cccccc;
+  color: #273142;
   margin-bottom: 0;
   margin-left: 20px;
 }

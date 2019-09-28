@@ -2,6 +2,7 @@ from ckeditor.fields import RichTextField
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
+from cloudinary.models import CloudinaryField
 
 
 class Category(models.Model):
@@ -10,13 +11,12 @@ class Category(models.Model):
     parent = models.ForeignKey('self', on_delete=models.CASCADE, blank=True, null=True, related_name='children')
 
     class Meta:
-        unique_together = ('slug', 'parent',)    #enforcing that there can not be two
-        verbose_name_plural = "categories"       #categories under a parent with same
-                                                 #slug
+        unique_together = ('slug', 'parent',)
+        verbose_name_plural = "categories"
+        # slug
 
-    def __str__(self):                           # __str__ method elaborated later in
-        full_path = [self.name]                  # post.  use __unicode__ in place of
-                                                 # __str__ if you are using python 2
+    def __str__(self):
+        full_path = [self.name]
         k = self.parent
 
         while k is not None:
@@ -24,6 +24,7 @@ class Category(models.Model):
             k = k.parent
 
         return ' -> '.join(full_path[::-1])
+
 
 STATUS = (
     (0, "Taslak"),
@@ -41,7 +42,7 @@ class Post(models.Model):
     content = RichTextField(blank=True, null=True, verbose_name='İçerik')
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0, verbose_name='İçerik Statüsü')
-    model_pic = models.ImageField(upload_to='uploads/', default='Görsel yükleyiniz...', verbose_name='İçerik Görseli')
+    model_pic = CloudinaryField('image')
 
     class Meta:
         ordering = ['-created_on']

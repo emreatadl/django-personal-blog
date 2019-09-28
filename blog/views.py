@@ -1,19 +1,12 @@
-import base64
-import datetime
-import itertools
-import json
-import sys
-
 import requests
 from django.core.paginator import Paginator
 from django.shortcuts import render, get_object_or_404, redirect, HttpResponse, HttpResponseRedirect
 from .models import Post, Comment, Category
 from .forms import CommentForm
-from django.db import connection
 
 
 def index(request):
-    queryset_index = Post.objects.filter(status=2).order_by('-created_on')[:3]
+    queryset_index = Post.objects.filter(status=2).order_by('-created_on')[:4]
     return render(request, 'index.html',
                   {
                       'queryset_index': queryset_index,
@@ -30,10 +23,12 @@ def Postlist(request):
     paginator_ready = Paginator(queryset, 20)
     page = request.GET.get('page')
     post_page = paginator_ready.get_page(page)
+    category_filter = Category.objects.filter()
     return render(request, 'blog.html',
                   {
                       'queryset': queryset,
                       'post_page': post_page,
+                      'category_filter': category_filter,
                   }
                   )
 

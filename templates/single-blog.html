@@ -21,8 +21,6 @@
 </head>
 
 <body>
-
-
 	<!--================ Start Header Area =================-->
 	<header class="header_area header_inner_page">
 		<div class="main_menu">
@@ -110,12 +108,15 @@
                       </div>
                     </div>
                   </div>
-									<div class="comments-area">
-											<h4>Yorumlar:</h4>
-											<div class="comment-list">
-                                                {% for comment in comments %}
+                                <div class="comments-area">
+                            <h4>Yorumlar:</h4>
+                            <div class="comment-list">
+                            {% if comment_count == 0 %}
+                                <p>Henüz yorum yazılmamış. İlk yorumu yazmak ister misiniz?</p>
+                            {% endif %}
+                                {% for comment in comments %}
                         <div class="single-comment justify-content-between d-flex">
-                          <div class="user justify-content-between d-flex">
+                          <div class="user justify-content-between d-flex" style="margin-bottom: 5px !important;">
                               <div class="thumb">
                                   <img src="{% static 'img/blog/c1.png' %}" alt="">
                               </div>
@@ -128,47 +129,44 @@
                                       </h5>
                                       <p class="date">{{ comment.created_date }}</p>
                                     </div>
-
-                                    <div class="reply-btn">
-                                      <a href="#" class="btn-reply text-uppercase">Yanıtla</a>
-                                    </div>
                                   </div>
                               </div>
                           </div>
                       </div>{% endfor %}
 											</div>
 									</div>
-									<div class="comment-form">
-											<h4>Hızlı sor kombo yapıcam</h4>
-                                            <form class="form-contact comment_form" action="." id="CommentForm" method="POST">{% csrf_token %}
-                                                <div class="row">
-                                                  <div class="col-sm-6">
-                                                      <div class="form-group">
-                                                          <label>İsim Soyisim:</label>
-                                                          <input class="au-input au-input--full" type="text" name="author">
-                                                      </div>
-                                                  </div>
-                                                    <div class="col-sm-6">
-                                                        <div class="form-group">
-                                                          <label>Email:</label>
-                                                          <input class="au-input au-input--full" type="email" name="email">                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="form-group">
-                                                            <label>Yorum:</label>
-                                                            <textarea class="form-control w-100" name="comment"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                  <button type="submit" class="primary_btn button-contactForm" href="">Gönder</button>
-                                                </div>
-                                            </form>
-									</div>
-							</div>
+                        <div class="comment-form">
+                                <h4>Hızlı sor kombo yapıcam</h4>
+                                <form class="form-contact comment_form" action="." id="CommentForm" method="POST">{% csrf_token %}
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                          <div class="form-group">
+                                              <label>İsim Soyisim:</label>
+                                              <input class="au-input au-input--full" type="text" name="author">
+                                          </div>
+                                      </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                              <label>Email:</label>
+                                              <input class="au-input au-input--full" type="email" name="email">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label>Yorum:</label>
+                                                <textarea class="form-control w-100" name="comment"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                      <button type="submit" class="primary_btn button-contactForm" href="">Gönder</button>
+                                    </div>
+                                </form>
+                        </div>
+                </div>
 							<div class="col-lg-4">
                 <div class="blog_right_sidebar">
-                      <aside class="single_sidebar_widget search_widget">
+                      {% comment %}<aside class="single_sidebar_widget search_widget">
                           <form action="#">
                             <div class="form-group">
                               <div class="input-group mb-3">
@@ -180,7 +178,7 @@
                             </div>
                             <button class="primary_btn rounded-0 primary-bg text-white w-100" type="submit">Search</button>
                           </form>
-                      </aside>
+                      </aside>{% endcomment %}
 
                       <aside class="single_sidebar_widget post_category_widget">
                         <h4 class="widget_title">Kategori</h4>

@@ -11,5 +11,5 @@ urlpatterns = [
     url(r'^hakkimda/', views.about_me, name='aboutme'),
     url('blog/', views.Postlist, name='home'),
     url(r'^(?P<slug>[-\w]+)/$', views.PostDetail, name='post_detail'),
-    url(r'^category/(?P<slug>[-\w]+)/$', views.category_list, name='category'),
+    url(r'^kategori/(?P<slug>[-\w]+)/$', views.category_list, name='category'),
 ]
