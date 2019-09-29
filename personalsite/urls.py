@@ -8,7 +8,6 @@ from blog import views
 
 urlpatterns = [
     path('ea/kp/admin/', include('material.admin.urls')),
-    url(r'^$', views.index, name='index'),
     url(r'', include('blog.urls')),
     path(r'analiz/', include('analysis.urls')),
 

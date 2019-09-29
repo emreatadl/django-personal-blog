@@ -7,6 +7,7 @@ from django.conf.urls import handler500, handler404
 app_name = 'blog'
 
 urlpatterns = [
+    url(r'^$', views.index, name='index'),
     url(r'^hakkimda/', views.about_me, name='aboutme'),
     url('blog/', views.Postlist, name='home'),
     url(r'^(?P<slug>[-\w]+)/$', views.PostDetail, name='post_detail'),

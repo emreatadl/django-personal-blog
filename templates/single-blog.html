@@ -1,5 +1,6 @@
 {%load static%}
 {% block body_block %}
+{% load cloudinary %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -27,8 +28,8 @@
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
-          <a class="navbar-brand logo_h" href="{% url 'index' %}"><img src="{% static 'img/logo3.png' %}" alt=""></a>
-					<a class="navbar-brand logo_inner_page" href="{% url 'index' %}"><img src="{% static 'img/logo3.png' %}" alt=""></a>
+          <a class="navbar-brand logo_h" href="{% url 'blog:index' %}"><img src="{% static 'img/logo3.png' %}" alt=""></a>
+					<a class="navbar-brand logo_inner_page" href="{% url 'blog:index' %}"><img src="{% static 'img/logo3.png' %}" alt=""></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
@@ -37,7 +38,7 @@
 					</button>
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav">
-							<li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Anasayfa</a></li>
+							<li class="nav-item"><a class="nav-link" href="{% url 'blog:index' %}">Anasayfa</a></li>
 							<li class="nav-item"><a class="nav-link" href="{% url 'blog:aboutme' %}">Hakkımda</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'blog:home' %}">Blog</a></li>
 						</ul>
@@ -75,7 +76,7 @@
                               <ul class="blog-info-link mt-3 mb-4">
                                 <li><a href="#"><i class="ti-user"></i>  {{ post_details.author }}</a></li>
                                 <li><a href="#"><i class="ti-timer"></i> {{ post_details.created_on}}</a></li>
-                                <li><a href="/category/{{ post_details.category.slug }}"><i class="ti-bookmark"></i> {{ post_details.category}}</a></li>
+                                <li><a href="/kategori/{{ post_details.category.slug }}"><i class="ti-bookmark"></i> {{ post_details.category}}</a></li>
                               </ul>
                                 <p class="excert">{{ post_details.content | safe }}
                                 </p>
@@ -185,7 +186,7 @@
                         <ul class="list cat-list">
                             {% for categories in category_filter %}
                             <li>
-                                <a href="/category/{{ categories.slug }}" class="d-flex">
+                                <a href="/kategori/{{ categories.slug }}" class="d-flex">
                                     <p>{{ categories.name }}</p>
                                 </a>
                             </li>
@@ -198,7 +199,7 @@
                           <h3 class="widget_title">Son Yazılar</h3>
                           {% for min_post in last_content %}
                           <div class="media post_item">
-                              <img style="width: 80px; height: 80px;" src="{% url 'index' %}{{  min_post.model_pic.url }}" alt="post">
+                              {% cloudinary min_post.model_pic format="jpg" style="width: 80px; height: 80px;" onerror="this.src = 'https://res.cloudinary.com/girdap/image/upload/v1569663073/default-image_grbzgw.png'" %}
                               <div class="media-body">
                                   <a href="{% url 'blog:post_detail' min_post.slug %}">
                                       <h3>{{ min_post.title }}</h3>
@@ -230,7 +231,7 @@
 								<nav class="navbar navbar-expand-lg navbar-light justify-content-center">
 									<div class="collapse navbar-collapse offset">
 										<ul class="nav navbar-nav menu_nav mx-auto">
-											<li class="nav-item"><a class="nav-link text-white" href="{% url 'index' %}">Anasayfa</a></li>
+											<li class="nav-item"><a class="nav-link text-white" href="{% url 'blog:index' %}">Anasayfa</a></li>
 											<li class="nav-item"><a class="nav-link text-white" href="{% url 'blog:aboutme' %}">Hakkımda</a></li>
 											<li class="nav-item"><a class="nav-link text-white" href="{% url 'blog:home' %}">Blog</a></li>
 											<li class="nav-item"><a class="nav-link text-white" href="services.html">Projelerim </a></li>
