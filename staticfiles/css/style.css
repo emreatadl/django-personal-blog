@@ -969,7 +969,9 @@ button.primary_btn {
 }
 
 .blog_item_img {
-
+  position: relative;
+  float: left;
+  width: calc(100% - 754px);
 }
 
 .blog_item_img .blog_item_date {

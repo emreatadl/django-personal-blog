@@ -1,7 +1,7 @@
-
 from django.conf.urls import url
 from django.urls import include
 from blog import views
+from django.conf.urls import handler500, handler404
 
 # SET THE NAMESPACE!
 app_name = 'blog'

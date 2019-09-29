@@ -1,6 +1,6 @@
 import requests
 from django.core.paginator import Paginator
-from django.shortcuts import render, get_object_or_404, redirect, HttpResponse, HttpResponseRedirect
+from django.shortcuts import render, get_object_or_404, redirect, HttpResponse, HttpResponseRedirect, render_to_response
 from .models import Post, Comment, Category
 from .forms import CommentForm
 
@@ -71,3 +71,7 @@ def category_list(request, slug):
                       'categories': categories,
                   }
                   )
+
+
+def error_500_view(request):
+    return render(request, 'error_pages.html')
