@@ -3,7 +3,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>404 Page</title>
+  <title>Yazılımcımız size aradığınız sayfayı bulup getiremedi</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700'>
 
@@ -51,12 +51,16 @@
         font-size: 30px;
         transform: rotate(1deg);
       }
+    .textC:hover {
+        color: #e91b1e;
+    }
 </style>
 <body>
 <div class="container">
+    <div class="textA"><p>Yazılımcımız size aradığınız sayfayı bulup getiremedi :( </p></div>
 	  <p class="textA">BULAMADIK</p>
   <p class="textB">404</p>
-  <a class="textC" href="#">ÇIK ÇIK</a>
+  <a class="textC" href="{% url 'index' %}">Geri Dön</a>
 	<svg class="page-not-found" viewBox="0 0 1280 1024">
 		  <title>Aradığınız sayfayı yazılımcımız size getiremedi.</title>
 		    <g class="hide tri-dots">
@@ -375,24 +379,7 @@
 		      <polygon points="593 168.6 659.5 244.5 497.1 255.2 593 168.6" style="fill: #f62c72"/>
 		      <polyline points="659.5 234.5 657.3 213.9 590.7 138 494.8 224.6 497.1 245.2 497.1 245.2 593 158.6 659.5 234.5" style="fill: #ffe029"/>
 		    </g>
-		    <g class="hide words">
-		      <text transform="translate(471.5 329.1) rotate(-2.9)" style="font-size: 40px;fill: #032c3f;font-family: Futura-CondensedMedium, Futura">P</text>
-		      <text transform="translate(486.4 328.4) rotate(-2.9)" style="font-size: 40px;fill: #032c3f;font-family: Futura-CondensedMedium, Futura">A</text>
-		      <text transform="translate(502.6 327.5) rotate(-2.9)" style="font-size: 40px;fill: #032c3f;font-family: Futura-CondensedMedium, Futura">G</text>
-		      <text transform="matrix(1, -0.05, 0.05, 1, 521.22, 326.59)" style="font-size: 40px;fill: #032c3f;font-family: Futura-CondensedMedium, Futura">E</text>
-		      <text transform="matrix(1, -0.05, 0.05, 1, 535.73, 325.85)" style="font-size: 40px;fill: #032c3f;font-family: Futura-CondensedMedium, Futura"> </text>
-		      <text transform="matrix(1, -0.05, 0.05, 1, 544, 325.43)" style="font-size: 40px;fill: #032c3f;font-family: Futura-CondensedMedium, Futura">N</text>
-		      <text transform="translate(562.7 324.5) rotate(-2.9)" style="font-size: 40px;fill: #032c3f;font-family: Futura-CondensedMedium, Futura">O</text>
-		      <text transform="translate(582.1 323.5) rotate(-2.9)" style="font-size: 40px;fill: #032c3f;font-family: Futura-CondensedMedium, Futura">T</text>
-		      <text transform="matrix(1, -0.05, 0.05, 1, 595.15, 322.83)" style="font-size: 40px;fill: #032c3f;font-family: Futura-CondensedMedium, Futura"> </text>
-		      <text transform="translate(603.4 322.4) rotate(-2.9)" style="font-size: 40px;fill: #032c3f;font-family: Futura-CondensedMedium, Futura">F</text>
-		      <text transform="translate(617.5 321.7) rotate(-2.9)" style="font-size: 40px;fill: #032c3f;font-family: Futura-CondensedMedium, Futura">O</text>
-		      <text transform="translate(636.6 320.7) rotate(-2.9)" style="font-size: 40px;fill: #032c3f;font-family: Futura-CondensedMedium, Futura">U</text>
-		      <text transform="translate(655.1 319.8) rotate(-2.9)" style="font-size: 40px;fill: #032c3f;font-family: Futura-CondensedMedium, Futura">N</text>
-		      <text transform="matrix(1, -0.05, 0.05, 1, 673.8, 318.83)" style="font-size: 40px;fill: #032c3f;font-family: Futura-CondensedMedium, Futura">D</text>
-		      <text transform="translate(742 682.9)" style="font-size: 60px;fill: #032c3f;font-family: Futura-CondensedMedium, Futura">GO <tspan x="69.1" y="0" style="letter-spacing: 0.0029296875em">B</tspan><tspan x="94" y="0" style="letter-spacing: -0.0068359375em">A</tspan><tspan x="118" y="0">CK</tspan></text>
-		      <text transform="translate(479.2 549.5)" style="font-size: 180px;fill: #032c3f;font-family: Futura-CondensedExtraBold, Futura;font-weight: 700">4<tspan x="108.3" y="0" style="letter-spacing: -0.0009765625em">0</tspan><tspan x="216.4" y="0">4</tspan></text>
-		    </g>
+
 		  </svg>
 </div>
 <!-- partial -->

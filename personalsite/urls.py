@@ -13,5 +13,3 @@ urlpatterns = [
     path(r'analiz/', include('analysis.urls')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-handler500 = 'blog.views.error_500_view'
