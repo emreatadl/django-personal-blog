@@ -3,7 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="2de475da-0441-4e3e-8aca-63215dddb876" name="Default Changelist" comment="Yetenekler, iş deneyimi, eğitim kısımları eklendi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/personalsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/personalsite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/personalsite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/personalsite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/single-blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/single-blog.html" afterDir="false" />
     </list>
     <list id="09b481da-d58b-4da7-9ff3-3f9ea6b80fb2" name="Revert: add page (aa18bbd0)" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,6 +88,7 @@
         <option value="Python Script" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -108,7 +122,8 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -274,7 +289,16 @@
       <workItem from="1568974705632" duration="607000" />
       <workItem from="1569444212783" duration="2274000" />
       <workItem from="1569510343647" duration="646000" />
-      <workItem from="1569571477996" duration="28940000" />
+      <workItem from="1569571477996" duration="31320000" />
+      <workItem from="1570031441368" duration="2215000" />
+      <workItem from="1570451226415" duration="7865000" />
+      <workItem from="1570820572803" duration="969000" />
+      <workItem from="1571036205464" duration="1067000" />
+      <workItem from="1571345049297" duration="247000" />
+      <workItem from="1571430808689" duration="1081000" />
+      <workItem from="1571595833567" duration="52000" />
+      <workItem from="1572509888028" duration="2780000" />
+      <workItem from="1572784157999" duration="4000" />
     </task>
     <task id="LOCAL-00001" summary="Add RichText in admin panel2">
       <created>1564597215121</created>

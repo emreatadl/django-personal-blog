@@ -90,7 +90,7 @@
                             {% cloudinary post.model_pic format="jpg" class="card-img rounded-0" onerror="this.src = 'https://res.cloudinary.com/girdap/image/upload/v1569663073/default-image_grbzgw.png'" %}
                         </div>
 
-                        <div class="blog_details" style="width: calc(100% - 244px); float: right;">
+                        <div class="blog_details" style="">
                             <a class="d-inline-block" href="{% url 'blog:post_detail' post.slug %}">
                                 <h2>{{ post.title }}</h2>
                             </a>
