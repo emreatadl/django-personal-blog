@@ -68,21 +68,28 @@
 			<div class="container">
 				<div class="row align-items-center justify-content-between">
 					<div class="col-lg-6">
-						<div class="banner_content">
+						<div class="banner_content" style="margin-top: 220px;">
 							<h1 class="text-uppercase">Emre Atadil</h1>
 							<h5 class="text-uppercase">Associate Product Manager <a href="https://tr.linkedin.com/company/trendyolgroup" target="_blank">@Trendyol</a></h5>
+                            <div style="margin: 15px;">
+                                <p>
+                                    Trendyol Marketplace ekibinde Product Manager olarak çalışıyorum. Satıcılarımızın daha iyi satış yapabilmesi ve müşterilerimizi daha sağlıklı alışveriş
+                                    imkanı sunmak için geliştirmelerimizi gerçekleştiriyoruz.
+                                </p>
+                            </div>
 							<div class="social_icons my-5">
 								<a href="https://twitter.com/emreatadil" target="_blank"><i class="ti-twitter"></i></a>
 								<a href="https://www.instagram.com/emreatadil/" target="_blank"><i class="ti-instagram"></i></a>
 								<a href="https://github.com/emreatadl" target="_blank"><i class="ti-github"></i></a>
 								<a href="https://tr.linkedin.com/in/emre-atadil" target="_blank"><i class="ti-linkedin"></i></a>
 							</div>
-							<a class="primary_btn" href="{% url 'blog:aboutme' %}"><span>Hakkımda</span></a>
+							<a class="primary_btn" href="{% url 'blog:aboutme' %}"><span>CV İNDİR</span></a>
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="home_right_img">
-							<img class="img-fluid" src="{% static 'img/banner/home-right-5-.svg' %}" alt="">
+							{% comment %}<img class="img-fluid" src="{% static 'img/banner/home-right-5-.svg' %}" alt="">{% endcomment %}
+							<img class="img-fluid" src="{% static 'img/testimonials/testimonial-bg-emre.png' %}" alt="">
 						</div>
 					</div>
 				</div>
@@ -124,7 +131,7 @@
 				<div class="col-lg-12">
 					<div class="main_title">
 						<p class="top_text"><span></span></p>
-						<h2>Son Yazılarım</h2>
+						<h2>Yazılarım</h2>
 					</div>
 				</div>
 			</div>
@@ -159,7 +166,7 @@
 
 
 	<!--================ Start Features Area =================-->
-	{% comment %}<section class="services_area">
+	<section class="services_area">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -202,102 +209,8 @@
 				</div>
 			</div>
 		</div>
-	</section>{% endcomment %}
+	</section>
 	<!--================ End Features Area =================-->
-
-
-  <!--================ Start Testimonial Area =================-->
-	{% comment %}<section class="testimonial_area">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="main_title">
-						<p class="top_text">Our Tesitmonial <span></span></p>
-						<h2>Honourable Client Says <br>
-							About Me </h2>
-					</div>
-				</div>
-      </div>
-
-      <div class="owl-carousel owl-theme testimonial-slider ">
-        <div class="testimonial-item">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="testi-img mb-4 mb-lg-0">
-                <img src="{% static 'img/testimonials/testimonial1.png' %}" alt="">
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="testi-right">
-                <h4>Roser Henrique</h4>
-                <p><small>Project Manager, Apple</small></p>
-
-                <p>Waters can not replenish hath fly and be to brought isn't very days behold without land every above lights us fruitful wherein divide it him fowl moving may beginning subdue fly waters can't replenish hath fly and be to brought isn't very days behold </p>
-                <ul class="star_rating mt-4">
-                  <li><span><i class="fas fa-star"></i></span></li>
-                  <li><span><i class="fas fa-star"></i></span></li>
-                  <li><span><i class="fas fa-star"></i></span></li>
-                  <li><span><i class="fas fa-star"></i></span></li>
-                  <li class="disable"><span><i class="fas fa-star"></i></span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-item">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="testi-img mb-4 mb-lg-0">
-                <img src="{% static 'img/testimonials/testimonial1.png' %}" alt="">
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="testi-right">
-                <h4>Roser Henrique</h4>
-                <p><small>Project Manager, Apple</small></p>
-
-                <p>Waters can not replenish hath fly and be to brought isn't very days behold without land every above lights us fruitful wherein divide it him fowl moving may beginning subdue fly waters can't replenish hath fly and be to brought isn't very days behold </p>
-                <ul class="star_rating mt-3">
-                  <li><span><i class="fas fa-star"></i></span></li>
-                  <li><span><i class="fas fa-star"></i></span></li>
-                  <li><span><i class="fas fa-star"></i></span></li>
-                  <li><span><i class="fas fa-star"></i></span></li>
-                  <li class="disable"><span><i class="fas fa-star"></i></span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-item">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="testi-img mb-4 mb-lg-0">
-                <img src="{% static 'img/testimonials/testimonial1.png' %}" alt="">
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="testi-right">
-                <h4>Roser Henrique</h4>
-                <p><small>Project Manager, Apple</small></p>
-
-                <p>Waters can not replenish hath fly and be to brought isn't very days behold without land every above lights us fruitful wherein divide it him fowl moving may beginning subdue fly waters can't replenish hath fly and be to brought isn't very days behold </p>
-                <ul class="star_rating mt-3">
-                  <li><span><i class="fas fa-star"></i></span></li>
-                  <li><span><i class="fas fa-star"></i></span></li>
-                  <li><span><i class="fas fa-star"></i></span></li>
-                  <li><span><i class="fas fa-star"></i></span></li>
-                  <li class="disable"><span><i class="fas fa-star"></i></span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>{% endcomment %}
-	<!--================ End Testimonial Area =================-->
 
 	<!--================ Start Brands Area =================-->
 	<section class="brands-area section_gap_bottom">
@@ -306,48 +219,33 @@
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="main_title">
+                            <div class="main_title" style="margin-bottom: 0 !important;">
                                 <p class="top_text"><span></span></p>
                                 <h2>Çalıştığım Firmalar </h2>
                             </div>
                         </div>
                     </div>
-                    <div class="owl-carousel brand-carousel">
-                        <!-- single-brand -->
-						<div class="single-brand-item d-table">
-							<div class="d-table-cell">
-								<a href="https://www.trendyol.com/" target="_blank">
-                                    <img  src="{% static 'img/company/trendyol-logo.png' %}" alt="">
-                                </a>							</div>
-						</div>
-						<!-- single-brand -->
-						<div class="single-brand-item d-table">
-							<div class="d-table-cell">
-								<a href="https://www.hepsiburada.com/" target="_blank">
-                                    <img  src="{% static 'img/company/hepsiburada-logo.png' %}" alt="">
-                                </a>							</div>
-						</div>
-						<!-- single-brand -->
-						<div class="single-brand-item d-table">
-							<div class="d-table-cell">
-								<a href="https://www.hsbc.com.tr/" target="_blank">
-                                    <img  src="{% static 'img/company/hsbc-logo.png' %}" alt="">
-                                </a>
-							</div>
-						</div>
-
-                        <div class="single-brand-item d-table">
-							<div class="d-table-cell">
-								<a href="https://www.meplast.com.tr/homepage/" target="_blank">
-                                    <img  src="{% static 'img/company/meplast-logo.png' %}" alt="">
-                                </a>
-							</div>
-						</div>
-					</div>
+                    <div class="container">
+                      <div class="row" style="margin: 15px;">
+                        <a href="https://www.trendyol.com/" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+                          <img src="{% static 'img/company/trendyol-logo.png' %}" class="img-fluid rounded">
+                        </a>
+                        <a href="https://www.hepsiburada.com/" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+                          <img src="{% static 'img/company/hepsiburada-logo.png' %}" class="img-fluid rounded">
+                        </a>
+                        <a href="https://www.hsbc.com.tr/" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+                          <img src="{% static 'img/company/hsbc-logo.png' %}" class="img-fluid rounded">
+                        </a>
+                        <a href="https://www.meplast.com.tr/homepage/" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+                          <img src="{% static 'img/company/meplast-logo.png' %}" class="img-fluid rounded">
+                        </a>
+                      </div>
+                    </div>
 				</div>
 			</div>
 		</div>
 	</section>
+
 	<!--================ End Brands Area =================-->
 
 	<!--================Footer Area =================-->
