@@ -70,8 +70,8 @@
               <div class="banner_content text-center">
                   <h2>Hakkımda</h2>
                   <div class="page_link">
-                      <a href="index.html">Anasayfa</a>
-                      <a href="about.html">Hakkımda</a>
+                      <a href="{% url 'blog:index' %}">Anasayfa</a>
+                      <a href="{% url 'blog:aboutme' %}">Hakkımda</a>
                   </div>
               </div>
           </div>
@@ -81,7 +81,7 @@
 
 
   <!--================ Start About Us Area =================-->
-	<section class="about_area section_gap">
+	<section class="about_area section_gap" style="padding: 40px !important;">
 		<div class="container">
 			<div class="row justify-content-start align-items-center">
 				<div class="col-lg-5">
@@ -108,42 +108,13 @@
 		</div>
 	</section>
   <!--================ End About Us Area =================-->
-  
-
-  <!--================ Start Testimonial Area =================-->
-	<section class="testimonial_area pb-xl-30px">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">`
-                    <div class="main_title">
-                        <p class="top_text">Yetenekler <span></span></p>
-                        <div>
-                            <p class="text-dark">Python</p>
-                        </div>
-                        <div>
-                            <p class="text-dark">Django</p>
-                        </div>
-                        <div>
-                            <p class="text-dark">Adobe Illustrator</p>
-                        </div>
-                        <div>
-                            <p class="text-dark">Adobe Photoshop</p>
-                        </div>
-                    </div>
-				</div>
-            </div>
-    </div>
-  </section>
-	<!--================ End Testimonial Area =================-->
-
-
   <!--================ Start Brands Area =================-->
 <section class="testimonial_area pb-xl-30px">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">`
+				<div class="col-lg-9">`
                     <div class="main_title">
-                        <p class="top_text">İş Deneyimi <span></span></p>
+                        <p class="top_text" style="font-size: 20px;">İş Deneyimi <span></span></p>
                         <div class="col-md-12" style="display: flex;">
                             <img class="col-md-4" src="{% static 'img/company/trendyol-logo.png' %}" style="max-height: 60px; max-width: 200px;">
                             <div class="col-md-8">
@@ -180,6 +151,23 @@
                             </div>
                         </div>
 
+                    </div>
+				</div>
+                <div class="col-lg-3">`
+                    <div class="main_title">
+                        <p class="top_text">Yetenekler <span></span></p>
+                        <div>
+                            <p class="text-dark">Python</p>
+                        </div>
+                        <div>
+                            <p class="text-dark">Django</p>
+                        </div>
+                        <div>
+                            <p class="text-dark">Adobe Illustrator</p>
+                        </div>
+                        <div>
+                            <p class="text-dark">Adobe Photoshop</p>
+                        </div>
                     </div>
 				</div>
             </div>
