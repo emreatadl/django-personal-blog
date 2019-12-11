@@ -42,6 +42,8 @@ def Postlist(request):
 def PostDetail(request, slug):
     try:
         post = Post.objects.get(status=2, slug=slug)  # notice the get instead of filter
+        post.view_count = post.view_count + 1
+        post.save()
         comments = post.comments.filter(approved_comment=True, post_id=post.id)
         last_content = Post.objects.filter(status=2).order_by('-created_on')[:3]
         comment_count = comments.count()

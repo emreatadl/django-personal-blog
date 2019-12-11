@@ -84,8 +84,9 @@
 											<div class="blog_details">
 													<h2>{{ post_details.title }}</h2>
                                                       <ul class="blog-info-link mt-3 mb-4">
-                                                        <li><a href="#"><i class="ti-user"></i>  {{ post_details.author }}</a></li>
-                                                        <li><a href="#"><i class="ti-timer"></i> {{ post_details.created_on}}</a></li>
+                                                        <li><a href="{% url 'blog:aboutme' %}"><i class="ti-user"></i>  {{ post_details.author }}</a></li>
+                                                        <li><a><i class="ti-timer"></i> {{ post_details.created_on}}</a></li>
+                                                        <li><a><i class="ti-stats-up"></i> {{ post_details.view_count}}</a></li>
                                                         <li><a href="/kategori/{{ post_details.category.slug }}"><i class="ti-bookmark"></i> {{ post_details.category}}</a></li>
                                                       </ul>
                                                         <p class="excert">{{ post_details.content | safe }}
@@ -114,7 +115,6 @@
                         <a href="{% url 'blog:aboutme' %}">
                           <h4>Emre Atadil</h4>
                         </a>
-                        <p>İçerik eklenecek</p>
                       </div>
                     </div>
                   </div>
