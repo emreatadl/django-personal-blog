@@ -13,8 +13,8 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
 	<link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
-  <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
-  <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.theme.default.min.css' %}">
 	<link rel="stylesheet" href="{% static 'vendors/fontawesome/css/all.min.css' %}">
 	<link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}">
 	<link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css' %}">
@@ -116,7 +116,7 @@
 		</div>
 	</section>
 	<!--================ End Home Banner Area =================-->
-
+    <div class="announcekit-widget"></div>
 	<!--================ Start Statistics Area =================-->
 {% comment %}	<section class="statistics_area">
 		<div class="container">
@@ -275,6 +275,17 @@ I love <i class="fa fa-heart" aria-hidden="true"></i> <a href="https://tr.linked
 	<script src="{% static 'js/gmaps.min.js' %}"></script>
 	<script src="{% static 'js/theme.js' %}"></script>
 </body>
+
+<script>
+  window.announcekit = (window.announcekit || { queue: [], on: function(n, x) { window.announcekit.queue.push([n, x]); }, push: function(x) { window.announcekit.queue.push(x); } });
+  window.announcekit.push({
+    "widget": "https://announcekit.app/widget/2ch6Ja",
+    "selector": ".announcekit-widget",
+    "embed": true,
+    "version": 2
+  })
+</script>
+<script async src="https://cdn.announcekit.app/widget.js"></script>
 
 </html>
 
