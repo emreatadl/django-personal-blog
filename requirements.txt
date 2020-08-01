@@ -1,3 +1,4 @@
+material
 cloudinary
 pytrends
 aiohttp==3.5.4

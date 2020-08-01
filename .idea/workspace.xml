@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2de475da-0441-4e3e-8aca-63215dddb876" name="Default Changelist" comment="Yetenekler, iş deneyimi, eğitim kısımları eklendi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/uploads/Screen_Shot_2019-07-26_at_15.32.47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/personalsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/personalsite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/Screen_Shot_2019-08-01_at_16.38.57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/uploads/Screen_Shot_2019-08-01_at_16.38.57.png" beforeDir="false" />
     </list>
     <list id="09b481da-d58b-4da7-9ff3-3f9ea6b80fb2" name="Revert: add page (aa18bbd0)" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -314,7 +318,16 @@
       <workItem from="1585376584370" duration="4010000" />
       <workItem from="1585426068820" duration="1000" />
       <workItem from="1585726417855" duration="11000" />
-      <workItem from="1589042295880" duration="1577000" />
+      <workItem from="1589042295880" duration="4014000" />
+      <workItem from="1589133145782" duration="540000" />
+      <workItem from="1589572573399" duration="596000" />
+      <workItem from="1591005675763" duration="562000" />
+      <workItem from="1591208270554" duration="763000" />
+      <workItem from="1593466209784" duration="260000" />
+      <workItem from="1593498487327" duration="17000" />
+      <workItem from="1595922641943" duration="684000" />
+      <workItem from="1595964844116" duration="557000" />
+      <workItem from="1596031349607" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="Add RichText in admin panel2">
       <created>1564597215121</created>
