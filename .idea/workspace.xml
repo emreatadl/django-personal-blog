@@ -200,6 +200,11 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Django tests.Test: blog.tests.SearchFormTestCase" />
+      <item itemvalue="Python.views" />
+      <item itemvalue="Django server.personalsite" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Django tests.Test: blog.tests.SearchFormTestCase" />

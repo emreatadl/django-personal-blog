@@ -1,5 +1,4 @@
 from .models import Post, Comment, Category
-from material.admin import admin
 from material.admin.options import MaterialModelAdmin
 from material.admin.sites import site
 
