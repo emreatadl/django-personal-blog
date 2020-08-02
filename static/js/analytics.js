@@ -70,4 +70,3 @@ function clickTwitter() {
      "eventLabel": "Twitter"
     });
 }
-
