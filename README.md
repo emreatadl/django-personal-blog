@@ -7,3 +7,4 @@ Django + PostgreSQL ile yazılmıştır.
 ```
 Emre Atadil
 ```
+# personalsite
