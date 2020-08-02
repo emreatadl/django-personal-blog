@@ -22,13 +22,6 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90326783-2"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-90326783-2');
-    </script>
-    <script>
     window['_fs_debug'] = false;
     window['_fs_host'] = 'fullstory.com';
     window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
@@ -66,9 +59,8 @@
 					</button>
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav">
-							<li class="nav-item"><a class="nav-link" href="{% url 'blog:index' %}">Anasayfa</a></li>
-							<li class="nav-item"><a class="nav-link" href="{% url 'blog:aboutme' %}">Hakkımda</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'blog:home' %}">Blog</a></li>
+							<li class="nav-item"><a class="nav-link" onclick="clickMenuItem1()" href="{% url 'blog:aboutme' %}">Hakkımda</a></li>
+                            <li class="nav-item"><a class="nav-link" onclick="clickMenuItem2()" href="{% url 'blog:home' %}">Blog</a></li>
 						</ul>
 					</div>
 				</div>
@@ -301,6 +293,7 @@ I <i class="fa fa-heart" aria-hidden="true"></i> <a href="https://tr.linkedin.co
 
   <!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'js/analytics.js' %}"></script>
 	<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
 	<script src="{% static 'js/popper.js' %}"></script>
 	<script src="{% static 'js/bootstrap.min.js' %}"></script>

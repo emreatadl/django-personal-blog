@@ -23,21 +23,11 @@
 	<link rel="stylesheet" href="{% static 'css/style.css' %}">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90326783-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-90326783-2');
-    </script>
-
 </head>
 
 <body>
 
 	<!--================ Start Header Area =================-->
-    <div>{{ time_zone }}</div>
-    <div>{{ record }}</div>
 	<header class="header_area header_inner_page">
 		<div class="main_menu">
 			<nav class="navbar navbar-expand-lg navbar-light">
@@ -54,9 +44,8 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav">
-							<li class="nav-item"><a class="nav-link" href="{% url 'blog:index' %}">Anasayfa</a></li>
-							<li class="nav-item active"><a class="nav-link" href="{% url 'blog:aboutme' %}">Hakkımda</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'blog:home' %}">Blog</a></li>
+							<li class="nav-item active"><a class="nav-link" onclick="clickMenuItem1()" href="{% url 'blog:aboutme' %}">Hakkımda</a></li>
+                            <li class="nav-item"><a class="nav-link" onclick="clickMenuItem2()" href="{% url 'blog:home' %}">Blog</a></li>
 						</ul>
 					</div>
 				</div>
@@ -80,8 +69,6 @@
       </div>
   </section>
   <!--================ End Banner Area =================-->
-
-
   <!--================ Start About Us Area =================-->
 	<section class="about_area section_gap" style="padding: 40px !important;">
 		<div class="container">
@@ -103,7 +90,7 @@
                             Trendyol Marketplace ekibinde Product Manager olarak çalışıyorum. Satıcılarımızın daha iyi satış yapabilmesi ve müşterilerimizi daha sağlıklı alışveriş
                             imkanı sunmak için geliştirmelerimizi gerçekleştiriyoruz.
 						</p>
-						<a class="primary_btn" href="#"><span>CV İndir</span></a>
+						<a class="primary_btn" onclick="clickLinkEdin()" href="https://tr.linkedin.com/in/emre-atadil"><span>ÖZ GEÇMİŞİM</span></a>
 					</div>
 				</div>
 			</div>
@@ -256,6 +243,7 @@ I <i class="fa fa-heart" aria-hidden="true"></i> <a href="https://tr.linkedin.co
 
   <!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'js/analytics.js' %}"></script>
 	<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
 	<script src="{% static 'js/popper.js' %}"></script>
 	<script src="{% static 'js/bootstrap.min.js' %}"></script>

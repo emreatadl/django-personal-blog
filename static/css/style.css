@@ -3562,7 +3562,6 @@ h6 {
 
 .single-blog h4 {
   font-size: 20px;
-  margin-top: 20px;
   margin-bottom: 15px;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
@@ -3656,6 +3655,9 @@ h6 {
 @media (min-width: 992px) {
   .testimonial-slider::after {
     display: block;
+  }
+  .single-blog {
+
   }
 }
 

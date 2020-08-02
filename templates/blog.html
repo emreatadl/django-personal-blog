@@ -50,9 +50,8 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav">
-							<li class="nav-item"><a class="nav-link" href="{% url 'blog:index' %}">Anasayfa</a></li>
-							<li class="nav-item"><a class="nav-link" href="{% url 'blog:aboutme' %}">Hakkımda</a></li>
-                            <li class="nav-item active"><a class="nav-link" href="{% url 'blog:home' %}">Blog</a></li>
+							<li class="nav-item"><a class="nav-link" onclick="clickMenuItem1()" href="{% url 'blog:aboutme' %}">Hakkımda</a></li>
+                            <li class="nav-item active"><a class="nav-link" onclick="clickMenuItem2()" href="{% url 'blog:home' %}">Blog</a></li>
 						</ul>
 					</div>
 				</div>
@@ -67,7 +66,7 @@
       <div class="banner_inner d-flex align-items-center">
           <div class="container">
               <div class="banner_content text-center">
-                  <h2>Yazılar</h2>
+                  <h2>YAZILAR</h2>
                   <div class="page_link">
                       <a href="{% url 'blog:home' %}">Blog</a>
                   </div>
@@ -215,6 +214,7 @@ I <i class="fa fa-heart" aria-hidden="true"></i> <a href="https://tr.linkedin.co
 
   <!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'js/analytics.js' %}"></script>
 	<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
 	<script src="{% static 'js/popper.js' %}"></script>
 	<script src="{% static 'js/bootstrap.min.js' %}"></script>

@@ -22,13 +22,7 @@
 	<link rel="stylesheet" href="{% static 'css/style.css' %}">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90326783-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-90326783-2');
-    </script>
     <script>
     window['_fs_debug'] = false;
     window['_fs_host'] = 'fullstory.com';
@@ -48,6 +42,7 @@
         g.clearUserCookie=function(){};
     })(window,document,window['_fs_namespace'],'script','user');
     </script>
+
     <script>
         FS.setUserVars({
             displayName : 'Ty Marketplace Test',
@@ -76,9 +71,8 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav">
-							<li class="nav-item active"><a class="nav-link" href="{% url 'blog:index' %}">Anasayfa</a></li>
-							<li class="nav-item"><a class="nav-link" href="{% url 'blog:aboutme' %}">Hakkımda</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'blog:home' %}">Blog</a></li>
+							<li class="nav-item"><a class="nav-link" onclick="clickMenuItem1()" href="{% url 'blog:aboutme' %}">Hakkımda</a></li>
+                            <li class="nav-item"><a class="nav-link" onclick="clickMenuItem2()" href="{% url 'blog:home' %}">Blog</a></li>
 						</ul>
 					</div>
 				</div>
@@ -93,16 +87,16 @@
 			<div class="container">
 				<div class="row align-items-center justify-content-between">
 					<div class="col-lg-6">
-						<div class="banner_content" style="margin-top: 220px;">
+						<div class="banner_content">
 							<h1 class="text-uppercase">Emre Atadil</h1>
-							<h5 class="text-uppercase">Associate Product Manager <a href="https://tr.linkedin.com/company/trendyolgroup" target="_blank">@Trendyol</a></h5>
+							<h5 class="text-uppercase">Associate Product Manager <a onclick="clickLinkEdin()" href="https://tr.linkedin.com/company/trendyolgroup" target="_blank">@Trendyol</a></h5>
 							<div class="social_icons my-5">
-								<a href="https://twitter.com/emreatadil" target="_blank"><i class="ti-twitter"></i></a>
-								<a href="https://www.instagram.com/emreatadil/" target="_blank"><i class="ti-instagram"></i></a>
-								<a href="https://github.com/emreatadl" target="_blank"><i class="ti-github"></i></a>
-								<a href="https://tr.linkedin.com/in/emre-atadil" target="_blank"><i class="ti-linkedin"></i></a>
+								<a onclick="clickTwitter()"  href="https://twitter.com/emreatadil" target="_blank"><i class="ti-twitter"></i></a>
+								<a onclick="clickInstagram()"  href="https://www.instagram.com/emreatadil/" target="_blank"><i class="ti-instagram"></i></a>
+								<a onclick="clickGithub()"  href="https://github.com/emreatadl" target="_blank"><i class="ti-github"></i></a>
+								<a onclick="clickLinkEdin()"  href="https://tr.linkedin.com/in/emre-atadil" target="_blank"><i class="ti-linkedin"></i></a>
 							</div>
-							<a class="primary_btn" href="{% url 'blog:aboutme' %}"><span>CV İNDİR</span></a>
+							<a class="primary_btn" onclick="clickAboutMe()" href="{% url 'blog:aboutme' %}" id="aboutMePage"><span> HAKKIMDA </span></a>
 						</div>
 					</div>
 					<div class="col-lg-4">
@@ -157,21 +151,25 @@
 
 			<div class="row">
                 {% for last_post in queryset_index %}
-				<div class="col-lg-3 col-md-6">
+				<div class="col-lg-3 col-lg-4 col-md-6">
 					<div class="single-blog">
 						<div class="thumb">
                             {% cloudinary last_post.model_pic format="jpg" class="card-img rounded-0" onerror="this.src = 'https://res.cloudinary.com/girdap/image/upload/v1569663073/default-image_grbzgw.png'" %}
 						</div>
 						<div class="short_details">
+                            <div style="padding-bottom: 25px;">
+                                <a onclick="window.dataLayer.push({'event': 'GAEvent', 'eventCategory': 'Anasayfa','eventAction': 'Yazılarım', 'eventLabel': '{{ last_post.title }}' });" class="d-block" href="{% url 'blog:post_detail' last_post.slug %}">
+                                    <h4 id="postTitle" >{{ last_post.title }}</h4>
+                                </a>
+                            </div>
 							<div class="meta-top d-flex">
-								<a><i class="ti-user"></i>{{ last_post.author }}</a>
-								<a><i class="ti-calendar"></i>{{ last_post.created_on }}</a>
+                                <dl>
+                                    <dt><i class="ti-user"></i> {{ last_post.author }} </dt>
+                                    <dt><i class="ti-calendar"></i> {{ last_post.created_on }} </dt>
+                                </dl>
 							</div>
-							<a class="d-block" href="{% url 'blog:post_detail' last_post.slug %}">
-								<h4>{{ last_post.title }}</h4>
-							</a>
 							<div class="text">
-								<p>{{ last_post.content | safe | slice:150 }}...</p>
+								<p> {{ last_post.content | safe | truncatewords:6 }}</p>
 							</div>
 							<a href="{% url 'blog:post_detail' last_post.slug %}" class="primary_btn2">Devamını Oku</a>
 						</div>
@@ -241,10 +239,10 @@
 							</div>
 						</div>
 						<div class="footer_social mt-lg-0 mt-4">
-                            <a href="https://tr.linkedin.com/in/emre-atadil"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/emreatadl"><i class="fab fa-github"></i></a>
-                            <a href="https://twitter.com/emreatadil"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/emreatadil/"><i class="fab fa-instagram"></i></a>
+                            <a onclick="clickLinkEdin()" href="https://tr.linkedin.com/in/emre-atadil"><i class="fab fa-linkedin-in"></i></a>
+                            <a onclick="clickGithub()" href="https://github.com/emreatadl"><i class="fab fa-github"></i></a>
+                            <a onclick="clickTwitter()" href="https://twitter.com/emreatadil"><i class="fab fa-twitter"></i></a>
+                            <a onclick="clickInstagram()" href="https://www.instagram.com/emreatadil/"><i class="fab fa-instagram"></i></a>
 						</div>
 					</div>
 				</div>
@@ -262,6 +260,7 @@ I <i class="fa fa-heart" aria-hidden="true"></i> <a href="https://tr.linkedin.co
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="{% static 'js/analytics.js' %}"></script>
 	<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
 	<script src="{% static 'js/popper.js' %}"></script>
 	<script src="{% static 'js/bootstrap.min.js' %}"></script>
