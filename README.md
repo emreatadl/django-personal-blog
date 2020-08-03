@@ -3,6 +3,7 @@
 [![N|Solid](https://intuz-site.imgix.net/uploads/django.png)](https://www.djangoproject.com/download/)
 
 [![MIT License][license-shield]][license-url]
+[![Live Demo][demo-shield]][demo-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -90,3 +91,5 @@ License
 [license-url]: https://github.com/emreatadl/atadil-personal-blog/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/emre-atadil/
+[demo-shield]: https://img.shields.io/badge/Live-Demo-brightgreen
+[demo-url]: http://www.emreatadil.com?ref=github
