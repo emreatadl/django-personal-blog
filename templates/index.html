@@ -1,0 +1,280 @@
+{%load static%}
+{% block body_block %}
+{% load cloudinary %}
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Emre Atadil</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.theme.default.min.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/fontawesome/css/all.min.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css' %}">
+	<!-- main css -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90326783-2"></script>
+
+    <script>
+    window['_fs_debug'] = false;
+    window['_fs_host'] = 'fullstory.com';
+    window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+    window['_fs_org'] = 'RC1XG';
+    window['_fs_namespace'] = 'FS';
+    (function(m,n,e,t,l,o,g,y){
+        if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+        g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+        o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;
+        y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+        g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+        g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+        g.log = function(a,b) { g("log", [a,b]) };
+        g.consent=function(a){g("consent",!arguments.length||a)};
+        g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+        g.clearUserCookie=function(){};
+    })(window,document,window['_fs_namespace'],'script','user');
+    </script>
+
+    <script>
+        FS.setUserVars({
+            displayName : 'Ty Marketplace Test',
+            email : 'example@example.com',
+            sellerId: 104898
+        });
+    </script>
+</head>
+
+<body>
+
+	<!--================ Start Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand logo_h" href="{% url 'blog:index' %}"><img src="{% static 'img/logo3.png' %}" alt=""></a>
+					<a class="navbar-brand logo_inner_page" href="{% url 'blog:index' %}"><img src="{% static 'img/logo3.png' %}" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav">
+							<li class="nav-item"><a class="nav-link" onclick="clickMenuItem1()" href="{% url 'blog:aboutme' %}">Hakkımda</a></li>
+                            <li class="nav-item"><a class="nav-link" onclick="clickMenuItem2()" href="{% url 'blog:home' %}">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+	<!--================ Start Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-lg-6">
+						<div class="banner_content">
+							<h1 class="text-uppercase">Emre Atadil</h1>
+							<h5 class="text-uppercase">Associate Product Manager <a onclick="clickLinkEdin()" href="https://tr.linkedin.com/company/trendyolgroup" target="_blank">@Trendyol</a></h5>
+							<div class="social_icons my-5">
+								<a onclick="clickTwitter()"  href="https://twitter.com/emreatadil" target="_blank"><i class="ti-twitter"></i></a>
+								<a onclick="clickInstagram()"  href="https://www.instagram.com/emreatadil/" target="_blank"><i class="ti-instagram"></i></a>
+								<a onclick="clickGithub()"  href="https://github.com/emreatadl" target="_blank"><i class="ti-github"></i></a>
+								<a onclick="clickLinkEdin()"  href="https://tr.linkedin.com/in/emre-atadil" target="_blank"><i class="ti-linkedin"></i></a>
+							</div>
+							<a class="primary_btn" onclick="clickAboutMe()" href="{% url 'blog:aboutme' %}" id="aboutMePage"><span> HAKKIMDA </span></a>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="home_right_img">
+							{% comment %}<img class="img-fluid" src="{% static 'img/banner/home-right-5-.svg' %}" alt="">{% endcomment %}
+							<img class="img-fluid" src="{% static 'img/testimonials/testimonial-bg-emre.png' %}" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Home Banner Area =================-->
+
+	<!--================ Start Statistics Area =================-->
+{% comment %}	<section class="statistics_area">
+		<div class="container">
+			<div class="row justify-content-lg-start justify-content-center">
+				<div class="col-lg-2 col-md-3">
+					<div class="statistics_item">
+						<h3><span class="counter">15</span>k+</h3>
+						<p>Happy Customer</p>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3">
+					<div class="statistics_item">
+						<h3><span class="counter">12</span>k+</h3>
+						<p>Ticket Solved</p>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3">
+					<div class="statistics_item">
+						<h3><span class="counter">9</span>/10</h3>
+						<p>Average Rating</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>{% endcomment %}
+	<!--================ End Statistics Area =================-->
+	<!--================ Start Blog Area =================-->
+	<section class="blog-area section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title">
+						<p class="top_text"><span></span></p>
+						<h2>Yazılarım</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                {% for last_post in queryset_index %}
+				<div class="col-lg-3 col-lg-4 col-md-6">
+					<div class="single-blog">
+						<div class="thumb">
+                            {% cloudinary last_post.model_pic format="jpg" class="card-img rounded-0" onerror="this.src = 'https://res.cloudinary.com/girdap/image/upload/v1569663073/default-image_grbzgw.png'" %}
+						</div>
+						<div class="short_details">
+                            <div style="padding-bottom: 25px;">
+                                <a onclick="window.dataLayer.push({'event': 'GAEvent', 'eventCategory': 'Anasayfa','eventAction': 'Yazılarım', 'eventLabel': '{{ last_post.title }}' });" class="d-block" href="{% url 'blog:post_detail' last_post.slug %}">
+                                    <h4 id="postTitle" >{{ last_post.title }}</h4>
+                                </a>
+                            </div>
+							<div class="meta-top d-flex">
+                                <dl>
+                                    <dt><i class="ti-user"></i> {{ last_post.author }} </dt>
+                                    <dt><i class="ti-calendar"></i> {{ last_post.created_on }} </dt>
+                                </dl>
+							</div>
+							<div class="text">
+								<p> {{ last_post.content | safe | truncatewords:6 }}</p>
+							</div>
+							<a href="{% url 'blog:post_detail' last_post.slug %}" class="primary_btn2">Devamını Oku</a>
+						</div>
+					</div>
+				</div>
+                {% endfor %}
+			</div>
+		</div>
+	</section>
+	<!--================ End Blog Area =================-->
+	<!--================ Start Brands Area =================-->
+	<section class="brands-area section_gap_bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="main_title" style="margin-bottom: 0 !important;">
+                                <p class="top_text"><span></span></p>
+                                <h2>Çalıştığım Firmalar </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                      <div class="row" style="margin: 15px;">
+                        <a href="https://www.trendyol.com/" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+                          <img src="{% static 'img/company/trendyol-logo.png' %}" class="img-fluid rounded">
+                        </a>
+                        <a href="https://www.hepsiburada.com/" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+                          <img src="{% static 'img/company/hepsiburada-logo.png' %}" class="img-fluid rounded">
+                        </a>
+                        <a href="https://www.hsbc.com.tr/" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+                          <img src="{% static 'img/company/hsbc-logo.png' %}" class="img-fluid rounded">
+                        </a>
+                        <a href="https://www.meplast.com.tr/homepage/" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+                          <img src="{% static 'img/company/meplast-logo.png' %}" class="img-fluid rounded">
+                        </a>
+                      </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--================ End Brands Area =================-->
+
+	<!--================Footer Area =================-->
+	<footer class="footer_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="footer_top flex-column">
+						<div class="footer_logo">
+							<a href="#">
+								<img src="{% static 'img/logo3.png' %}" alt="">
+							</a>
+							<div class="d-lg-block d-none">
+								<nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+									<div class="collapse navbar-collapse offset">
+										<ul class="nav navbar-nav menu_nav mx-auto">
+											<li class="nav-item"><a class="nav-link text-white" href="{% url 'blog:index' %}">Anasayfa</a></li>
+											<li class="nav-item"><a class="nav-link text-white" href="{% url 'blog:aboutme' %}">Hakkımda</a></li>
+											<li class="nav-item"><a class="nav-link text-white" href="{% url 'blog:home' %}">Blog</a></li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+						</div>
+						<div class="footer_social mt-lg-0 mt-4">
+                            <a onclick="clickLinkEdin()" href="https://tr.linkedin.com/in/emre-atadil"><i class="fab fa-linkedin-in"></i></a>
+                            <a onclick="clickGithub()" href="https://github.com/emreatadl"><i class="fab fa-github"></i></a>
+                            <a onclick="clickTwitter()" href="https://twitter.com/emreatadil"><i class="fab fa-twitter"></i></a>
+                            <a onclick="clickInstagram()" href="https://www.instagram.com/emreatadil/"><i class="fab fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer_bottom justify-content-center">
+				<p class="col-lg-8 col-sm-12 footer-text">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tüm haklar saklıdır. | Development powered by <a href="https://tr.linkedin.com/in/emre-atadil" target="_blank">Emre Atadil</a><br>
+I <i class="fa fa-heart" aria-hidden="true"></i> <a href="https://tr.linkedin.com/in/emre-atadil" target="_blank">Django</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="{% static 'js/analytics.js' %}"></script>
+	<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'js/popper.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/stellar.js' %}"></script>
+	<script src="{% static 'vendors/isotope/imagesloaded.pkgd.min.js' %}"></script>
+	<script src="{% static 'vendors/isotope/isotope-min.js' %}"></script>
+	<script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+	<script src="{% static 'js/mail-script.js' %}"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script data-ad-client="ca-pub-3384848777391313" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script src="{% static 'js/gmaps.min.js' %}"></script>
+	<script src="{% static 'js/theme.js' %}"></script>
+</body>
+</html>
+
+{% endblock %}

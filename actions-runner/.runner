@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "atadil-personal-blog",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelines.actions.githubusercontent.com/N9lUC1BsTfQ77i5Bx1k3w3ONgrkHJe1MWvEMQCJPCHAqneK6Rw",
+  "gitHubUrl": "https://github.com/emreatadl/atadil-personal-blog",
+  "workFolder": "_work"
+}

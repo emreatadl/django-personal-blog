@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2de475da-0441-4e3e-8aca-63215dddb876" name="Default Changelist" comment="Yetenekler, iş deneyimi, eğitim kısımları eklendi">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/uploads/ayupol.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/uploads/ayupol_Ank72NY.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/uploads/ayupol_G2mhN8h.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/uploads/ayupol_M1i4S7u.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/personalsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/personalsite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personalsite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/personalsite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/about-us.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/b1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/b2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/b3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/banner/banner-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/banner/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/banner/home-right-5-.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/banner/home-right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/bg-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/add.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/author.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/blog1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/blog2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/blog3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/c1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/c2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/c2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/c3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/c3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/c4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/c5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/c6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/cat-post/cat-post-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/cat-post/cat-post-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/cat-post/cat-post-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/causes/causes-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/causes/causes-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/causes/causes-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/feature-img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/home-blog/home-blog-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/home-blog/home-blog-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/home-blog/home-blog-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/main-blog/m-blog-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/main-blog/m-blog-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/main-blog/m-blog-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/main-blog/m-blog-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/main-blog/m-blog-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/next.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/popular-post/post1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/popular-post/post2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/popular-post/post3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/popular-post/post4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/post-img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/post-img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/blog/prev.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/_DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/a2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/disabled-check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/disabled-radio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/f1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/f2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/f3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/f4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/f5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/f6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/f7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/f8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/g1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/g2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/g3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/g4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/g5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/g6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/g7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/g8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/primary-check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/primary-radio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/success-check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/success-radio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/user1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/elements/user2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/instagram/i1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/instagram/i2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/instagram/i3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/instagram/i4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/instagram/i5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/instagram/i6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/instagram/i7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/instagram/i8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/instagram/widget-i1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/instagram/widget-i2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/instagram/widget-i3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/instagram/widget-i4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/instagram/widget-i5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/instagram/widget-i6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/portfolio/p1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/portfolio/p2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/portfolio/p3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/portfolio/p4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/portfolio/p5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/portfolio/p6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/portfolio/portfolio-details.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/services/s1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/services/s2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/services/s3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/testimonials/testimonial1.png" beforeDir="false" />
+    </list>
+    <list id="09b481da-d58b-4da7-9ff3-3f9ea6b80fb2" name="Revert: add page (aa18bbd0)" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="emreatadil.herokuapp.com" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="emreatadil.herokuapp.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="emreatadil.herokuapp.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="d4b1d75vsvmd4: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="emreatadil.herokuapp.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="d4b1d75vsvmd4: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="emreatadil.herokuapp.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="d4b1d75vsvmd4: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="emreatadil.herokuapp.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="d4b1d75vsvmd4: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="package.json" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1QPwlIgQ8Cw4UCkpOOXpNCzcIlL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite&#10;postgresql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$/staticfiles/material/admin/images" />
+      <recent name="$PROJECT_DIR$/blog" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Django tests.Test: blog.tests.SearchFormTestCase">
+    <configuration name="Test: blog.tests.SearchFormTestCase" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="personalsite" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="blog.tests.SearchFormTestCase" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="personalsite" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/blog" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/blog/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="personalsite" type="Python.DjangoServer" factoryName="Django server">
+      <module name="personalsite" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="personalsite.settings" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django server.personalsite" />
+      <item itemvalue="Django tests.Test: blog.tests.SearchFormTestCase" />
+      <item itemvalue="Python.views" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Django tests.Test: blog.tests.SearchFormTestCase" />
+        <item itemvalue="Python.views" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@dec97d31" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@dec97d31" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@543f41e8" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2de475da-0441-4e3e-8aca-63215dddb876" name="Default Changelist" comment="" />
+      <changelist id="09b481da-d58b-4da7-9ff3-3f9ea6b80fb2" name="Revert: add page (aa18bbd0)" comment="" />
+      <created>1563034314256</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563034314256</updated>
+      <workItem from="1563034315644" duration="1066000" />
+      <workItem from="1563204874165" duration="489000" />
+      <workItem from="1563255443280" duration="62000" />
+      <workItem from="1563306366611" duration="1789000" />
+      <workItem from="1563739985247" duration="901000" />
+      <workItem from="1563777937973" duration="20000" />
+      <workItem from="1564070082194" duration="9018000" />
+      <workItem from="1564121674306" duration="38461000" />
+      <workItem from="1564383785891" duration="7814000" />
+      <workItem from="1564465202167" duration="291000" />
+      <workItem from="1564517875203" duration="2712000" />
+      <workItem from="1564555541903" duration="788000" />
+      <workItem from="1564592914449" duration="9487000" />
+      <workItem from="1564651360577" duration="1944000" />
+      <workItem from="1564728210660" duration="294000" />
+      <workItem from="1564730300471" duration="841000" />
+      <workItem from="1564815140543" duration="3480000" />
+      <workItem from="1564901135984" duration="677000" />
+      <workItem from="1564990908580" duration="505000" />
+      <workItem from="1565003137168" duration="12663000" />
+      <workItem from="1565075688114" duration="1059000" />
+      <workItem from="1565078192989" duration="2108000" />
+      <workItem from="1565116357309" duration="3602000" />
+      <workItem from="1565167508938" duration="14119000" />
+      <workItem from="1565270873703" duration="2000" />
+      <workItem from="1565280451015" duration="2741000" />
+      <workItem from="1565289934914" duration="9931000" />
+      <workItem from="1565328868967" duration="1922000" />
+      <workItem from="1565450006489" duration="318000" />
+      <workItem from="1565644394638" duration="284000" />
+      <workItem from="1566153310913" duration="2544000" />
+      <workItem from="1566203212133" duration="4996000" />
+      <workItem from="1566372439355" duration="1037000" />
+      <workItem from="1566452157073" duration="812000" />
+      <workItem from="1566546878700" duration="6934000" />
+      <workItem from="1566659061842" duration="2581000" />
+      <workItem from="1566754833251" duration="231000" />
+      <workItem from="1566814076604" duration="958000" />
+      <workItem from="1566841454367" duration="1196000" />
+      <workItem from="1566977663220" duration="2627000" />
+      <workItem from="1567684951899" duration="165000" />
+      <workItem from="1567685140524" duration="351000" />
+      <workItem from="1567685700520" duration="899000" />
+      <workItem from="1568007668583" duration="1315000" />
+      <workItem from="1568096915253" duration="233000" />
+      <workItem from="1568310918703" duration="754000" />
+      <workItem from="1568655305934" duration="3831000" />
+      <workItem from="1568823781932" duration="54000" />
+      <workItem from="1568909098317" duration="675000" />
+      <workItem from="1568974705632" duration="607000" />
+      <workItem from="1569444212783" duration="2274000" />
+      <workItem from="1569510343647" duration="646000" />
+      <workItem from="1569571477996" duration="31320000" />
+      <workItem from="1570031441368" duration="2215000" />
+      <workItem from="1570451226415" duration="7865000" />
+      <workItem from="1570820572803" duration="969000" />
+      <workItem from="1571036205464" duration="1067000" />
+      <workItem from="1571345049297" duration="247000" />
+      <workItem from="1571430808689" duration="1081000" />
+      <workItem from="1571595833567" duration="52000" />
+      <workItem from="1572509888028" duration="2780000" />
+      <workItem from="1572784157999" duration="4000" />
+      <workItem from="1573814766983" duration="218000" />
+      <workItem from="1573836350025" duration="3390000" />
+      <workItem from="1574164707429" duration="32000" />
+      <workItem from="1574799099146" duration="846000" />
+      <workItem from="1575450436910" duration="728000" />
+      <workItem from="1575910333957" duration="2402000" />
+      <workItem from="1575964391355" duration="977000" />
+      <workItem from="1575973093185" duration="1969000" />
+      <workItem from="1576426092537" duration="9000" />
+      <workItem from="1576789056023" duration="2208000" />
+      <workItem from="1578811170229" duration="626000" />
+      <workItem from="1579947350607" duration="673000" />
+      <workItem from="1579949029487" duration="1206000" />
+      <workItem from="1584972422333" duration="775000" />
+      <workItem from="1585342979401" duration="745000" />
+      <workItem from="1585376584370" duration="4010000" />
+      <workItem from="1585426068820" duration="1000" />
+      <workItem from="1585726417855" duration="11000" />
+      <workItem from="1589042295880" duration="4014000" />
+      <workItem from="1589133145782" duration="540000" />
+      <workItem from="1589572573399" duration="596000" />
+      <workItem from="1591005675763" duration="562000" />
+      <workItem from="1591208270554" duration="763000" />
+      <workItem from="1593466209784" duration="260000" />
+      <workItem from="1593498487327" duration="17000" />
+      <workItem from="1595922641943" duration="684000" />
+      <workItem from="1595964844116" duration="557000" />
+      <workItem from="1596031349607" duration="8000" />
+      <workItem from="1596431803280" duration="509000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add RichText in admin panel2">
+      <created>1564597215121</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1564597215121</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Yetenekler, iş deneyimi, eğitim kısımları eklendi">
+      <created>1564651989350</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1564651989350</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Yetenekler, iş deneyimi, eğitim kısımları eklendi">
+      <created>1564652135265</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564652135265</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/Users/emre.atadil/Desktop/PythonProject/personalsite/static/css" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="Paths">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="dir:/Users/emre.atadil/Desktop/PythonProject/personalsite/static/css" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/emreatadil.com" />
+    </ignored-roots>
+    <MESSAGE value="Add RichText in admin panel" />
+    <MESSAGE value="Add RichText in admin panel2" />
+    <MESSAGE value="Yetenekler, iş deneyimi, eğitim kısımları eklendi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Yetenekler, iş deneyimi, eğitim kısımları eklendi" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/personalsite$views.coverage" NAME="views Coverage Results" MODIFIED="1569684353697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/blog" />
+    <SUITE FILE_PATH="coverage/personalsite$Test__blog_tests_SearchFormTestCase.coverage" NAME="Test: blog.tests.SearchFormTestCase Coverage Results" MODIFIED="1569761002966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>

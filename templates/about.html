@@ -1,0 +1,265 @@
+{%load static%}
+{% block body_block %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Emre Atadil - Hakkımda</title>
+	<!-- Bootstrap CSS -->
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.theme.default.min.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/fontawesome/css/all.min.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css' %}">
+	<!-- main css -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90326783-2"></script>
+</head>
+
+<body>
+
+	<!--================ Start Header Area =================-->
+	<header class="header_area header_inner_page">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand logo_h" href="{% url 'blog:index' %}"><img src="{% static 'img/logo3.png' %}" alt=""></a>
+					<a class="navbar-brand logo_inner_page" href="{% url 'blog:index' %}"><img src="{% static 'img/logo3.png' %}" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav">
+							<li class="nav-item active"><a class="nav-link" onclick="clickMenuItem1()" href="{% url 'blog:aboutme' %}">Hakkımda</a></li>
+                            <li class="nav-item"><a class="nav-link" onclick="clickMenuItem2()" href="{% url 'blog:home' %}">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+  <!--================ Start Banner Area =================-->
+  <section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+          <div class="container">
+              <div class="banner_content text-center">
+                  <h2>Hakkımda</h2>
+                  <div class="page_link">
+                      <a href="{% url 'blog:index' %}">Anasayfa</a>
+                      <a href="{% url 'blog:aboutme' %}">Hakkımda</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!--================ End Banner Area =================-->
+  <!--================ Start About Us Area =================-->
+	<section class="about_area section_gap" style="padding: 40px !important;">
+		<div class="container">
+			<div class="row justify-content-start align-items-center">
+				<div class="col-lg-5">
+					<div class="about_img">
+						<img class="" src="{% static 'img/testimonials/testimonial-bg-emre.png' %}" alt="">
+					</div>
+				</div>
+
+				<div class="offset-lg-1 col-lg-5">
+					<div class="main_title text-left">
+						<p class="top_text">Hakkımda <span></span></p>
+						<h3>
+							Associate Product Manager <br>
+							Trendyol
+						</h3>
+						<p>
+                            Trendyol Marketplace ekibinde Product Manager olarak çalışıyorum. Satıcılarımızın daha iyi satış yapabilmesi ve müşterilerimizi daha sağlıklı alışveriş
+                            imkanı sunmak için geliştirmelerimizi gerçekleştiriyoruz.
+						</p>
+						<a class="primary_btn" onclick="clickLinkEdin()" href="https://tr.linkedin.com/in/emre-atadil"><span>ÖZ GEÇMİŞİM</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+  <!--================ End About Us Area =================-->
+  <!--================ Start Brands Area =================-->
+<section class="testimonial_area pb-xl-30px">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9">`
+                    <div class="main_title">
+                        <p class="top_text" style="font-size: 20px;">İş Deneyimi <span></span></p>
+                        <div class="col-md-12" style="display: flex;">
+                            <img class="col-md-4" src="{% static 'img/company/trendyol-logo.png' %}" style="max-height: 60px; max-width: 200px;">
+                            <div class="col-md-8">
+                                <h4>Associate Product Manager / Trendyol</h4>
+                                <p class="datetimepicker-days">Mart 2019 - <b>Devam ediyor</b></p>
+                        </div>
+                        </div>
+                        <div class="col-md-12" style="display: flex;">
+                            <img class="col-md-4" src="{% static 'img/company/trendyol-logo.png' %}" style="max-height: 60px; max-width: 200px;">
+                            <div class="col-md-8">
+                                <h4>Marketplace Entegrasyon Uzmanı / Trendyol</h4>
+                                <p class="datetimepicker-days">Mayıs 2018 - Mart 2019</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="display: flex;">
+                            <img class="col-md-4" src="{% static 'img/company/hepsiburada-logo.png' %}" style="max-height: 60px; max-width: 200px;">
+                            <div class="col-md-8">
+                                <h4>Marketplace Entegrasyon Uzmanı / Hepsiburada</h4>
+                                <p class="datetimepicker-days">Ağustos 2017 - Mayıs 2018</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="display: flex;">
+                            <img class="col-md-4" src="{% static 'img/company/hepsiburada-logo.png' %}" style="max-height: 60px; max-width: 200px;">
+                            <div class="col-md-8">
+                                <h4>Marketplace Entegrasyon Stajyeri / Hepsiburada</h4>
+                                <p class="datetimepicker-days">Şubat 2017 - Ağustos 2017</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="display: flex;">
+                            <img class="col-md-4" src="{% static 'img/company/hsbc-logo.png' %}" style="max-height: 60px; max-width: 200px;">
+                            <div class="col-md-8">
+                                <h4>Bireysel Satış Yönetimi Stajyeri / HSBC</h4>
+                                <p class="datetimepicker-days">Aralık 2015 - Mayıs 2016</p>
+                            </div>
+                        </div>
+
+                    </div>
+				</div>
+                <div class="col-lg-3">`
+                    <div class="main_title">
+                        <p class="top_text">Yetenekler <span></span></p>
+                        <div>
+                            <p class="text-dark">Python</p>
+                        </div>
+                        <div>
+                            <p class="text-dark">Django</p>
+                        </div>
+                        <div>
+                            <p class="text-dark">Adobe Illustrator</p>
+                        </div>
+                        <div>
+                            <p class="text-dark">Adobe Photoshop</p>
+                        </div>
+                    </div>
+				</div>
+            </div>
+    </div>
+  </section>
+    <!--================ End Brands Area =================-->
+
+    <section class="testimonial_area pb-xl-30px">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">`
+                    <div class="main_title">
+                        <p class="top_text">Eğitim <span></span></p>
+                        <div class="col-md-12" style="display: flex;">
+                            <i class="fas fa-school"  style="font-size: 30px; color: #8034c3;"></i>
+                            <div class="col-md-8">
+                                <h4>İstanbul Üniversitesi - İşletme Fakültesi</h4>
+                                <p class="datetimepicker-days">2013 - Mayıs 2017</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="display: flex;">
+                            <i class="fas fa-school"  style="font-size: 30px; color: #8034c3;"></i>
+                            <div class="col-md-8">
+                                <h4>Dündar Çiloğlu Anadolu Lisesi - Eşit Ağırlık</h4>
+                                <p class="datetimepicker-days">2009 - 2013</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="display: flex;">
+                            <i class="fas fa-school"  style="font-size: 30px; color: #8034c3;"></i>
+                            <div class="col-md-8">
+                                <h4>Murat Germen İlköğretim Okulu</h4>
+                                <p class="datetimepicker-days">2001 - 2009</p>
+                            </div>
+                        </div>
+
+                    </div>
+				</div>
+            </div>
+    </div>
+  </section>
+        
+  <!--================Footer Area =================-->
+	<footer class="footer_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="footer_top flex-column">
+						<div class="footer_logo">
+							<a href="#">
+								<img src="{% static 'img/logo3.png' %}" alt="">
+							</a>
+							<div class="d-lg-block d-none">
+								<nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+									<div class="collapse navbar-collapse offset">
+										<ul class="nav navbar-nav menu_nav mx-auto">
+											<li class="nav-item"><a class="nav-link text-white" href="{% url 'blog:index' %}">Anasayfa</a></li>
+											<li class="nav-item"><a class="nav-link text-white" href="{% url 'blog:aboutme' %}">Hakkımda</a></li>
+											<li class="nav-item"><a class="nav-link text-white" href="{% url 'blog:home' %}">Blog</a></li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+						</div>
+						<div class="footer_social mt-lg-0 mt-4">
+                            <a href="https://tr.linkedin.com/in/emre-atadil"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/emreatadl"><i class="fab fa-github"></i></a>
+                            <a href="https://twitter.com/emreatadil"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/emreatadil/"><i class="fab fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer_bottom justify-content-center">
+				<p class="col-lg-8 col-sm-12 footer-text">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tüm haklar saklıdır. | Development powered <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://tr.linkedin.com/in/emre-atadil" target="_blank">Emre Atadil</a><br>
+I <i class="fa fa-heart" aria-hidden="true"></i> <a href="https://tr.linkedin.com/in/emre-atadil" target="_blank">Django</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		</div>
+	</footer>
+  <!--================End Footer Area =================-->
+  
+
+  <!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'js/analytics.js' %}"></script>
+	<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'js/popper.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/stellar.js' %}"></script>
+	<script src="{% static 'vendors/isotope/imagesloaded.pkgd.min.js' %}"></script>
+	<script src="{% static 'vendors/isotope/isotope-min.js' %}"></script>
+	<script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+	<script src="{% static 'js/mail-script.js' %}"></script>
+    <script data-ad-client="ca-pub-3384848777391313" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="{% static 'js/gmaps.min.js' %}"></script>
+	<script src="{% static 'js/theme.js' %}"></script>
+</body>
+
+</html>
+
+{% endblock %}
