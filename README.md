@@ -1,4 +1,4 @@
-# Emre Atadil 
+# Django Kişisel Blog
 
 Django + PostgreSQL ile yazılmıştır.
 
@@ -7,4 +7,8 @@ Django + PostgreSQL ile yazılmıştır.
 ```
 Emre Atadil
 ```
-# personalsite
+
+## Kurulum
+
+````
+````

@@ -30,12 +30,12 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '9sx4unctsv^4eoc6grakexmti=i=7$dk5#ctyg**6i%n=b)t)6'
+SECRET_KEY = 'SECRET_KEY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*", "www.emreatadil.com"]
+ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
@@ -99,11 +99,11 @@ WSGI_APPLICATION = 'personalsite.wsgi.application'
 DATABASES = {
     'default': {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        'NAME': 'd4b1d75vsvmd4',
-        'USER': 'fwnhbzipaywsnr',
-        'PASSWORD': '716b7efa40dc318cb5aaa92f8fb728328f4c9771fe2c9cbf399172269f24beb3',
-        'HOST': 'ec2-174-129-226-232.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'NAME': 'dbName',
+        'USER': 'dbUser',
+        'PASSWORD': 'dbPassword',
+        'HOST': 'dbHost',
+        'PORT': 'dbPort',
     }
 }
 
@@ -126,9 +126,9 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 cloudinary.config(
-    cloud_name="girdap",
-    api_key="111977943696443",
-    api_secret="U8orlOyH62NzNl32bUPdZ-xj2E0"
+    cloud_name="cloud_name",
+    api_key="api_key",
+    api_secret="api_secret"
 )
 
 # Internationalization

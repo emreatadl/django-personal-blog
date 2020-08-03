@@ -4,7 +4,7 @@ from material.admin.sites import site
 
 
 site.site_header = 'Admin Dashboard'
-site.site_title = 'Emre Atadil'
+site.site_title = 'Emre Atadil Blog'
 site.index_title = 'Admin Dashboard'
 
 
