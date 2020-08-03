@@ -3,114 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2de475da-0441-4e3e-8aca-63215dddb876" name="Default Changelist" comment="Yetenekler, iş deneyimi, eğitim kısımları eklendi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/uploads/ayupol.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/uploads/ayupol_Ank72NY.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/uploads/ayupol_G2mhN8h.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/uploads/ayupol_M1i4S7u.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/personalsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/personalsite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/personalsite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/personalsite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/about-us.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/b1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/b2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/b3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/banner/banner-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/banner/banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/banner/home-right-5-.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/banner/home-right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/bg-01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/add.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/author.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/blog1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/blog2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/blog3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/c1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/c2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/c2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/c3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/c3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/c4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/c5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/c6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/cat-post/cat-post-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/cat-post/cat-post-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/cat-post/cat-post-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/causes/causes-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/causes/causes-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/causes/causes-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/feature-img1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/home-blog/home-blog-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/home-blog/home-blog-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/home-blog/home-blog-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/main-blog/m-blog-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/main-blog/m-blog-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/main-blog/m-blog-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/main-blog/m-blog-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/main-blog/m-blog-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/next.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/popular-post/post1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/popular-post/post2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/popular-post/post3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/popular-post/post4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/post-img1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/post-img2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/blog/prev.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/_DS_Store" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/a2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/disabled-check.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/disabled-radio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/f1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/f2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/f3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/f4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/f5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/f6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/f7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/f8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/g1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/g2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/g3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/g4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/g5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/g6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/g7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/g8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/primary-check.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/primary-radio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/success-check.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/success-radio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/user1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/elements/user2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/instagram/i1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/instagram/i2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/instagram/i3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/instagram/i4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/instagram/i5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/instagram/i6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/instagram/i7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/instagram/i8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/instagram/widget-i1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/instagram/widget-i2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/instagram/widget-i3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/instagram/widget-i4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/instagram/widget-i5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/instagram/widget-i6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/logo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/portfolio/p1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/portfolio/p2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/portfolio/p3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/portfolio/p4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/portfolio/p5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/portfolio/p6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/portfolio/portfolio-details.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/services/s1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/services/s2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/services/s3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/testimonials/testimonial1.png" beforeDir="false" />
     </list>
     <list id="09b481da-d58b-4da7-9ff3-3f9ea6b80fb2" name="Revert: add page (aa18bbd0)" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -443,7 +335,7 @@
       <workItem from="1595922641943" duration="684000" />
       <workItem from="1595964844116" duration="557000" />
       <workItem from="1596031349607" duration="8000" />
-      <workItem from="1596431803280" duration="509000" />
+      <workItem from="1596431803280" duration="991000" />
     </task>
     <task id="LOCAL-00001" summary="Add RichText in admin panel2">
       <created>1564597215121</created>
