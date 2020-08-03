@@ -86,7 +86,7 @@ CKEDITOR_CONFIGS = {
 
 License
 ----
-[MIT](https://github.com/emreatadl/atadil-personal-blog/blob/master/LICENSE.md)
+[MIT](https://github.com/emreatadl/atadil-personal-blog/blob/master/LICENSE.txt)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
