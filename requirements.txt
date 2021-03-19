@@ -50,7 +50,7 @@ django-tinymce==2.8.0
 django-tinymce4-lite==1.7.5
 django-treebeard==4.3
 djangocms-admin-style==1.4.0
-djangorestframework==3.9.4
+djangorestframework==3.11.2
 Eel==0.10.4
 elasticsearch==6.4.0
 elasticsearch-dsl==6.4.0
