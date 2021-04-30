@@ -103,7 +103,7 @@ striprtf==0.0.5
 traitlets==4.3.2
 tzlocal==1.5.1
 uritemplate==3.0.0
-urllib3==1.25.2
+urllib3==1.25.8
 virtualenv==16.6.0
 Werkzeug==0.15.4
 whichcraft==0.5.2
